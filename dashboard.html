@@ -155,23 +155,25 @@
                                     <h4 class="cards-title fs-large">Satisfaction Rate</h4>
                                     <h6 class="fs-small">From all projects</h6>
                                 </div>
-                                <div class="progress-bar-sec">
-                                    <div class="percent">
-                                        <svg>
-                                          <circle cx="105" cy="105" r="100"></circle>
-                                          <circle cx="105" cy="105" r="100" style="--percent: 90"></circle>
-                                        </svg>
-                                        <div class="icon-div">
-                                            <ion-icon name="happy-outline" class="icon"></ion-icon>
+                                <div class="d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="progress-bar-sec w-100">
+                                        <div class="percent">
+                                            <svg>
+                                              <circle cx="105" cy="105" r="100"></circle>
+                                              <circle cx="105" cy="105" r="100" style="--percent: 90"></circle>
+                                            </svg>
+                                            <div class="icon-div">
+                                                <ion-icon name="happy-outline" class="icon"></ion-icon>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="info-div">
-                                        <span class="per fs-esmall">0%</span>
-                                        <div class="current-per">
-                                            <span class="current">95%</span>
-                                            <span class="text fs-esmall">Based on completion</span>
+                                        <div class="info-div">
+                                            <span class="per fs-esmall">0%</span>
+                                            <div class="current-per">
+                                                <span class="current">95%</span>
+                                                <span class="text fs-esmall">Based on completion</span>
+                                            </div>
+                                            <span class="per fs-esmall">100%</span>
                                         </div>
-                                        <span class="per fs-esmall">100%</span>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +219,7 @@
                     </div>
 
                     <div class="chart-row row"> 
-                        <div class="col-lg-6 card-col">
+                        <div class="col-lg-6 col-xxl-7 card-col">
                             <div class="analytics-div">
                                 <div class="sec-title-div">
                                     <h5 class="fs-large">Analytics</h5>
@@ -228,7 +230,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 card-col">
+                        <div class="col-lg-6 col-xxl-5 card-col">
                             <div class="analytics-div active-user-chart">
                                 <div class="chart-div">
                                     <canvas class="chart-canvas" id="activeUsersChart"></canvas>
@@ -279,14 +281,17 @@
                                 <button type="button" class="dropdown-btn"><ion-icon name="ellipsis-vertical" class="icon"></ion-icon></button>
                             </div>
 
-                            <table class="table">
-                                <thead>
-                                    <th class="table-th">COMPANIES</th>
-                                    <th class="table-th">MEMBERS</th>
-                                    <th class="table-th">START DATE</th>
-                                    <th class="table-th">COMPLETION</th>
-                                </thead>
-                                <tbody>
+                            <div class="table-responsive">
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                        <th class="table-th" style="min-width: 200px;">COMPANIES</th>
+                                        <th class="table-th" style="min-width: 150px;">MEMBERS</th>
+                                        <th class="table-th" style="min-width: 110px;">START DATE</th>
+                                        <th class="table-th" style="width:15%">COMPLETION</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
                                     <tr>
                                         <td class="table-td"><img src="assests/images/campaign-table.png" alt="campaign table" class="img-fluid campaign-img">Campaign name</td>
                                         <td class="table-td">
@@ -391,8 +396,9 @@
                                             </div>
                                         </td>
                                     </tr>
-                                </tbody>
-                            </table>
+                                  </tbody>
+                                </table>
+                              </div>    
                         </div>
                         <div class="col-lg-5 card-col">
                             <div class="conversion-card">
@@ -452,6 +458,13 @@
                 </div>
 
 
+                <footer class="footer">
+                    <div class="inner-content">
+                        <a href="javascript:void(0)" class="footer-link">Members</a>
+                        <a href="javascript:void(0)" class="footer-link">Templates</a>
+                        <a href="javascript:void(0)" class="footer-link">Blog</a>
+                    </div>
+                </footer>
             </div>
         </div>
     </main>
