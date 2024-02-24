@@ -59,7 +59,7 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .nav-slide-open button.navbar-toggler .navbar-dash:nth-child(3){transform:rotate(-45deg) translate(2px,-8px);}
 
 
-.page-height{min-height: calc(100vh - 113px)!important;}
+.page-height{min-height: calc(100vh - 113px) !important;}
 .fs-esmall{font-size: 12px;font-weight: 500;line-height: 12px;color: #fff;margin: 0;}
 .fs-small{font-size: 14px;font-weight: 500;line-height: 14px;color: var(--gray-color);margin: 0;}
 .fs-medium{font-size: 16px;font-weight: 400;line-height: 24px;color: var(--gray-color);margin: 0;}
@@ -115,10 +115,46 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .active-campaigns-card .cards-progress .cards{width: 100%;}
 
 
-.analytics-div{background: linear-gradient(126.97deg, rgba(0, 2, 18, 0.74) 28.26%, rgba(17, 0, 0, 0.71) 91.2%);padding: 28px 21px;border-radius: 20px;}
+.analytics-div{height: 100%;background: linear-gradient(126.97deg, rgba(0, 2, 18, 0.74) 28.26%, rgba(17, 0, 0, 0.71) 91.2%);padding: 28px 21px;border-radius: 20px;}
 .analytics-div .sub-heading{margin-top: 6px;}
 .analytics-div .sub-heading .font-bold{color: var(--green-color);font-weight: 700;}
-.chart-div{width: 100%;height: 100%;margin-top: 20px;}
+.chart-div{width: 100%;margin-top: 20px;}
+.active-user-chart .chart-div{margin-top: 0;background: linear-gradient(126.97deg, #001B3B 28.26%, #003A65 91.2%);border-radius: 20px;padding: 10px;}
+.active-user-chart.analytics-div{padding: 16px 22px 31px 22px;background: #04001C;}
+.active-user-chart .sec-title-div{margin-top: 24px;margin-bottom: 35px;}
+
+.progress-bar-mcard{display: flex;align-items: center;justify-content: space-between;gap: 0 50px;}
+.progress-bar-card{display: flex;flex-direction: column;gap: 9px 0;}
+.progress-bar-card .icon-div{display: flex;align-items: center;gap: 0 11px;font-size: 14px;font-weight: 500;line-height: 21px;color: var(--gray-color);}
+.progress-bar-card .icon-div .icon{display: flex;width: 25px;height: 25px;background: var(--primary-color);border-radius: 6px;align-items: center;justify-content: center;}
+.progress-bar-card .icon-div .icon .icn{color: #fff;width: 12.5px;height: 12.5px;}
+.bar{width: 100px;position: relative;height: 3px;border-radius: 50px;background: #414351;}
+.bar .filled{position: absolute;left: 0;top: 0;height: 3px;background: var(--primary-color);border-radius: 50px;}
+.table-title{display: flex;justify-content: space-between;}
+.table-title .text-content .icon{width: 15px;height: 15px;color: var(--green-color);}
+.table-title .text-content{display: flex;flex-direction: column;gap: 6px 0;}
+.table-title .dropdown-btn{border: 0;background: transparent;height: 100%;}
+.table-title .dropdown-btn .icon{color: var(--gray-color);width: 20px;height: 20px;}
+.table-sec .table{margin-top: 30px;}
+.table-sec .table .table-th{font-size: 10px;font-weight: 500;line-height: 15px;color: var(--gray-color);padding: 0 0 12.5px 0;border-color: #56577A;}
+.table-sec .table .campaign-img{width: 29px;height: 25px;margin-right: 12px;}
+.table-sec .table .table-td{font-size: 14px;font-weight: 500;line-height: 20px;color: #fff;padding: 19px 0;border-color: #56577A;}
+.table-sec .table .table-td .user-img{width: 26px;height: 26px;object-fit: cover;border-radius: 50%;border: 2px solid #001B3B;margin-right: -10px;}
+.table-sec .table .members-imgdiv{display: flex;}
+.table-sec .table .progress-bar-div{display: flex;flex-direction: column;}
+.table-sec .table .progress-bar-div .perc{margin: 0;font-size: 14px;font-weight: 700;line-height: 20px;color: #fff;}
+.table-sec .table .bar{background: #23244B;width: 125px;}
+.table-sec .table .bar .filled{background: #1A9BE3;}
+
+.conversion-card{background: linear-gradient(126.97deg, #04001C 28.26%, #0A0020 91.2%);border-radius: 20px;padding: 28px 22px;}
+.conversion-card .font-bold{font-weight: 500;}
+.conversion-card-list{display: flex;flex-direction: column;gap: 25px 0;margin-top: 30px;}
+.conversion-cards .icon{color: var(--primary-color);width: 15px;height: 15px;margin-top: 4px;}
+.conversion-cards{display: flex;gap: 0 20px;}
+.conversion-cards .text-content{display: flex;flex-direction: column;gap: 4px 0;}
+.conversion-cards .text-content .fs-medium{color: #fff;}
+.conversion-cards .text-content .fs-small{line-height: 18px;}
+
 
 
 @media (min-width: 1199px){
