@@ -65,7 +65,7 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .fs-medium{font-size: 16px;font-weight: 400;line-height: 24px;color: var(--gray-color);margin: 0;}
 .fs-large{font-size: 18px;font-weight: 700;line-height: 25px;margin: 0;color: #fff;}
 .inner-cards-row{display: flex;flex-direction: column;gap: 24px 0;}
-.page-height .padding-div{padding: 0 24px;}
+.page-height .padding-div{padding: 0 24px 10px 24px;}
 .card-col{padding: 0 12px;}
 .cards-row{gap: 24px 0;}
 .quick-cards .inner-card{padding: 18px 18px 18px 22px;background: var(--dark-linear-background);border-radius: 20px;display: flex;justify-content: space-between;align-items: center;gap: 0 45px;}
@@ -97,7 +97,13 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .rate-card .progress-bar-sec .icon-div .icon{width: 30px;height: 30px;color: #fff;}
 .percent svg {position: relative;width: 212px;height: 212px;transform: rotate(18deg);}  
 .percent svg circle {width: 100%;height: 100%;fill: none;stroke: #22234B;stroke-width: 10;stroke-linecap: round;}  
+.active-campaigns-card .percent svg circle{stroke: transparent;}
 .percent svg circle:last-of-type {stroke-dasharray: 625px;stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);stroke: #0007B5; }
+.active-campaigns-card .percent svg circle:last-of-type{stroke: #05CD99;}
+.campaigns-progress{position: relative;height: 212px;}
+.active-campaigns-card .score-div{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);display: flex;flex-direction: column;gap: 6px 0;align-items: center;}
+.active-campaigns-card .score-div .score{font-size: 50px;font-weight: 700;line-height: 50px;color: #fff;margin: 0;}
+.active-campaigns-card .percent svg{transform: rotate(65deg);}
 
 .active-campaigns-card{padding: 27px 25px 3px 30px;background: linear-gradient(126.97deg, #02001D 28.26%, #06001E 91.2%);border-radius: 20px;}
 .active-campaigns-card .sec-title-div{display: flex;align-items: center;justify-content: space-between;margin-bottom: 5px;}
@@ -105,7 +111,15 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .active-campaigns-card .dot-dropdown .icon{color: var(--primary-color);width: 24px;height: 24px;}
 .active-campaigns-card .status-card{background: linear-gradient(126.97deg, #070629 28.26%, rgba(0, 1, 17, 0.5) 91.2%);border-radius: 20px;padding: 20px 53px 29px 24px;}
 .active-campaigns-card .status-card{display: flex;flex-direction: column;gap: 5px 0;}
-.active-campaigns-card .cards-progress{display: flex;gap: 0 35px;}
+.active-campaigns-card .cards-progress{display: flex;gap: 0 35px;align-items: center;}
+.active-campaigns-card .cards-progress .cards{width: 100%;}
+
+
+.analytics-div{background: linear-gradient(126.97deg, rgba(0, 2, 18, 0.74) 28.26%, rgba(17, 0, 0, 0.71) 91.2%);padding: 28px 21px;border-radius: 20px;}
+.analytics-div .sub-heading{margin-top: 6px;}
+.analytics-div .sub-heading .font-bold{color: var(--green-color);font-weight: 700;}
+.chart-div{width: 100%;height: 100%;margin-top: 20px;}
+
 
 @media (min-width: 1199px){
     .wrapper{padding-left: 274px;}
@@ -116,10 +130,13 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
     .main-header .navbar .right-links .links{color: #fff;}
 }
 @media (max-width:575px) {
+    .wrapper{overflow: hidden;}
     .cards-row{gap: 15px 0;}
     .page-height .padding-div{padding: 0 15px;}
     .main-header .navbar{flex-direction: column;flex-wrap: wrap;width: 100%;height: auto;gap: 10px 0;}
     .main-header .right-content{width: 100%;justify-content: end;}
     button.navbar-toggler{position: absolute;right: 0;top: -60px;}
         
+    .active-campaigns-card .cards-progress{flex-wrap: wrap;gap: 15px 0;justify-content: center;}
+    .active-campaigns-card .score-div .score{font-size: 34px;line-height: 38px;}
 }
