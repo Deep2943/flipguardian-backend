@@ -1,0 +1,1 @@
+const toggleSlide = () => {document.body.classList.toggle("nav-slide-open");}
