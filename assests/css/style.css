@@ -111,7 +111,7 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .active-campaigns-card .dot-dropdown .icon{color: var(--primary-color);width: 24px;height: 24px;}
 .active-campaigns-card .status-card{background: linear-gradient(126.97deg, #070629 28.26%, rgba(0, 1, 17, 0.5) 91.2%);border-radius: 20px;padding: 20px 25px 15px 24px;}
 .active-campaigns-card .status-card{display: flex;flex-direction: column;gap: 5px 0;}
-.active-campaigns-card .cards-progress{display: flex;gap: 0 35px;align-items: center;}
+.active-campaigns-card .cards-progress{display: flex;gap: 0 35px;align-items: center;justify-content: space-between;}
 .active-campaigns-card .cards-progress .cards{width: 100%;}
 
 
@@ -159,6 +159,19 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .footer .inner-content .footer-link{font-size: 14px;font-weight: 400;line-height: 21px;text-decoration: none;color: #fff;}
 
 #analyticsChart{height: 250px;}
+
+
+.dark-table{background: #07001E;padding: 45px 65px;border-radius: 20px;}
+.table-sec .table tr:nth-last-child(1) td{border: 0;padding-bottom: 0;}
+
+.project-campaigns.active-campaigns-card .cards-progress{flex-direction: column-reverse;gap: 15px 0;}
+.project-campaigns.active-campaigns-card .cards-progress .cards{width: fit-content;display: flex;justify-content: space-between;width: 100%;}
+.project-campaigns.active-campaigns-card .status-card{padding: 20px 8px 30px 4px;}
+
+.start-project-card{padding: 45px;background: #04001C;border-radius: 20px;}
+.start-project-card .cards-title{font-size: 28px;font-weight: 700;line-height: 28px;color: rgba(255, 255, 255, 0.8);margin: 0 0 10px 0;}
+.start-project-card .add-project{width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;margin-top: 15px;padding: 45px;}
+
 @media (min-width: 1199px){
     .wrapper{padding-left: 256px;}
     .wrapper .sidebar{transform: translate3d(0,0,0);left: 10px;}
