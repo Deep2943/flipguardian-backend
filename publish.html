@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publishing | Flipguardian</title>
+    <link rel="icon" type="image/x-icon" href="assests/images/favicon.png">
+
+    <!-- CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assests/css/style.css">
+
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">   
+
+    <!-- Javascript  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="assests/js/script.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="sidebar" id="sidebar">
+            <div class="inner">
+                <div class="top-header">
+                    <h5 class="logo-title">FLIP GUARDIAN</h5>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="nav-item"><a href="dashboard.html" class="nav-link"><span class="nav-icon"><ion-icon name="home" class="icon"></ion-icon></span> Dashboard</a></li>
+                    <li class="nav-item"><a href="project.html" class="nav-link"><span class="nav-icon"><ion-icon name="stats-chart" class="icon"></ion-icon></span> Projects</a></li>
+                    <li class="nav-item"><a href="publish.html" class="nav-link active"><span class="nav-icon"><ion-icon name="card" class="icon"></ion-icon></span> Publishing</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Collaboration</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Insights</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Media</a></li>
+                </ul>
+                <div class="bottom-links">
+                    <h5 class="heading">ACCOUNT PAGES</h5>
+                    <ul class="sidebar-nav">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="person" class="icon"></ion-icon></span> Profile</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="document" class="icon"></ion-icon></span> Sign In</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="rocket" class="icon"></ion-icon></span> Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="wrapper" id="wrapper">
+        <div class="page-contents">
+            <nav class="navbar">
+                <div class="breadcrumbs-div">
+                    <div class="path"><span class="prev-page">Pages</span> <span class="curr-page">/ Publishing</span></div>
+                    <h6 class="current-page">Publishing</h6>
+                </div>
+                <div class="right-content">
+                    <div class="right-links">
+                        <a href="javascript:void(0)" class="links with-text"><ion-icon name="person" class="icon"></ion-icon>Sign In</a>
+                        <a href="javascript:void(0)" class="links"><ion-icon name="settings" class="icon"></ion-icon></a>
+                        <a href="javascript:void(0)" class="links"><ion-icon name="notifications" class="icon"></ion-icon></a>
+                    </div>
+                    <button type="button" class="btn navbar-toggler border-0 toggle-menu" onclick="toggleSlide()" id="slide-toggle">
+                        <span class="navbar-dash"></span>
+                        <span class="navbar-dash"></span>
+                        <span class="navbar-dash"></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="padding-div">
+                <div class="inner-cards-row">
+                    <div class="quick-cards">
+                        <div class="row cards-row">
+                            <div class="col-lg-3 col-md-6 card-col">
+                                <div class="inner-card">
+                                    <div class="text-content">
+                                        <h6 class="card-title">Today's Income</h6>
+                                        <div class="price-div">
+                                            <span class="price">$3,134</span>
+                                            <span class="perc">+5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="icon-div">
+                                        <ion-icon name="wallet" class="icon"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-3 col-md-6 card-col">
+                                <div class="inner-card">
+                                    <div class="text-content">
+                                        <h6 class="card-title">Visitors (TODAY)</h6>
+                                        <div class="price-div">
+                                            <span class="price">211</span>
+                                            <span class="perc">+5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="icon-div">
+                                        <ion-icon name="globe-outline" class="icon"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-3 col-md-6 card-col">
+                                <div class="inner-card">
+                                    <div class="text-content">
+                                        <h6 class="card-title">New Users</h6>
+                                        <div class="price-div">
+                                            <span class="price">+52</span>
+                                            <span class="perc minus-value">-5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="icon-div">
+                                        <ion-icon name="document-text" class="icon"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-3 col-md-6 card-col">
+                                <div class="inner-card">
+                                    <div class="text-content">
+                                        <h6 class="card-title">Total Conversions</h6>
+                                        <div class="price-div">
+                                            <span class="price">$14,489</span>
+                                            <span class="perc">+8%</span>
+                                        </div>
+                                    </div>
+                                    <div class="icon-div">
+                                        <ion-icon name="cart" class="icon"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-row row"> 
+                        <div class="col-lg-6">
+                            <div class="publish-card">
+                                <div class="title-div">
+                                    <h5 class="title">Publish new </h5>
+                                    <h5 class="fs-medium">Build custom flipbooks and reports</h5>
+                                </div>
+                                <div class="link-cards">
+                                    <h5 class="label">What would you like to publish</h5>
+                                    <div class="cards-div row">
+                                        <div class="col-sm-4">
+                                            <a href="javascript:void(0)" class="inner-card">
+                                                <img src="assests/images/flipbooks.png" alt="FlipBooks" class="img-fluid card-img">
+                                                <h5 class="card-title">Flip Book</h5>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="javascript:void(0)" class="inner-card">
+                                                <img src="assests/images/3d.png" alt="3D/AR/VR" class="img-fluid card-img">
+                                                <h5 class="card-title">3D/AR/VR</h5>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="javascript:void(0)" class="inner-card">
+                                                <img src="assests/images/lorem-img.png" alt="Lorem ipsum" class="img-fluid card-img">
+                                                <h5 class="card-title">Lorem ipsum</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xxl-5 card-col">
+                            <div class="analytics-div publishing-chart-div active-user-chart">
+                                <div class="chart-div">
+                                    <canvas class="chart-canvas" id="activeUsersChart"></canvas>
+                                </div>
+                                <div class="sec-title-div">
+                                    <h5 class="fs-large">Active Users</h5>
+                                    <h6 class="sub-heading fs-small"><span class="font-bold">(+43)</span> than last month</h6>
+                                </div>
+                                <div class="progress-bar-mcard">
+                                    <div class="progress-bar-card">
+                                        <div class="icon-div">
+                                            <div class="icon"><ion-icon name="wallet" class="icn"></ion-icon></div>
+                                            Users
+                                        </div>
+                                        <h5 class="count fs-large">32,984</h5>
+                                        <div class="bar"><span class="filled" style="width:66%"></span></div>
+                                    </div>
+
+                                    <div class="progress-bar-card">
+                                        <div class="icon-div">
+                                            <div class="icon"><ion-icon name="cart" class="icn"></ion-icon></div>
+                                            Sales
+                                        </div>
+                                        <h5 class="count fs-large">2,400$</h5>
+                                        <div class="bar"><span class="filled" style="width:40%"></span></div>
+                                    </div>
+
+                                    <div class="progress-bar-card">
+                                        <div class="icon-div">
+                                            <div class="icon"><ion-icon name="build" class="icn"></ion-icon></div>
+                                            Projects
+                                        </div>
+                                        <h5 class="count fs-large">320</h5>
+                                        <div class="bar"><span class="filled" style="width:60.5%"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-row row">
+                        <div class="col-xxl-6 col-lg-5 card-col">
+                            <div class="analytics-div">
+                                <div class="sec-title-div">
+                                    <h5 class="fs-large">Graphs</h5>
+                                    <h6 class="sub-heading fs-small"><span class="font-bold">(+5) more</span> in 2024</h6>
+                                </div>
+                                <div class="chart-div">
+                                    <canvas class="chart-canvas" id="analyticsChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-lg-5 card-col">
+                            <div class="conversion-card">
+                                <div class="table-title">
+                                    <div class="text-content">
+                                        <h5 class="fs-large">Conversion information</h5>
+                                        <h6 class="fs-medium d-flex align-items-center gap-1"><ion-icon name="checkmark-circle" class="icon"></ion-icon> <span class="font-bold">+21%</span> this month</h6>
+                                    </div>
+                                </div>
+                                <div class="conversion-card-list">
+                                    <div class="conversion-cards">
+                                        <ion-icon name="card" class="icon"></ion-icon>
+                                        <div class="text-content">
+                                            <h4 class="fs-medium">$9,653, Design changes</h4>
+                                            <h6 class="fs-small">last update. 17 FEB, 7:20 PM</h6>
+                                        </div>
+                                    </div>
+                                    <div class="conversion-cards">
+                                        <ion-icon name="card" class="icon"></ion-icon>
+                                        <div class="text-content">
+                                            <h4 class="fs-medium">New order #4219423</h4>
+                                            <h6 class="fs-small">21 DEC 11:21 PM</h6>
+                                        </div>
+                                    </div>
+                                    <div class="conversion-cards">
+                                        <ion-icon name="card" class="icon"></ion-icon>
+                                        <div class="text-content">
+                                            <h4 class="fs-medium">Server Payments for April</h4>
+                                            <h6 class="fs-small">21 DEC 9:28 PM</h6>
+                                        </div>
+                                    </div>
+                                    <div class="conversion-cards">
+                                        <ion-icon name="card" class="icon"></ion-icon>
+                                        <div class="text-content">
+                                            <h4 class="fs-medium">New card added for order #3210145</h4>
+                                            <h6 class="fs-small">20 DEC 3:52 PM</h6>
+                                        </div>
+                                    </div>
+                                    <div class="conversion-cards">
+                                        <ion-icon name="card" class="icon"></ion-icon>
+                                        <div class="text-content">
+                                            <h4 class="fs-medium">Unlock packages for Development</h4>
+                                            <h6 class="fs-small">19 DEC 11:35 PM</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <footer class="footer">
+                    <div class="inner-content">
+                        <a href="javascript:void(0)" class="footer-link">Members</a>
+                        <a href="javascript:void(0)" class="footer-link">Templates</a>
+                        <a href="javascript:void(0)" class="footer-link">Blog</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const ctx = document.getElementById('analyticsChart');
+        const ctx2 = document.getElementById('activeUsersChart');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                label: '',
+                legend: {
+                    labels: {
+                        boxWidth: 0,
+                    }
+                },
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {boxWidth: 0,}
+                    }
+                }
+            }
+        });
+
+        new Chart(ctx2, {
+            type: 'scatter',
+            data: {
+                labels: [
+                    'January',
+                    'February',
+                    'March',
+                    'April'
+                ],
+                datasets: [{
+                type: 'bar',
+                label: '',
+                data: [10, 20, 30, 40],
+                backgroundColor: 'rgba(255, 255, 255, 255)'
+            }, {
+                type: 'line',
+                label: '',
+                data: [50, 50, 50, 50],
+                fill: false,
+            }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {boxWidth: 0,}
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

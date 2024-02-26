@@ -22,8 +22,33 @@
     <script src="assests/js/script.js"></script>
 </head>
 <body>
+    <header class="main-header">
+        <div class="sidebar" id="sidebar">
+            <div class="inner">
+                <div class="top-header">
+                    <h5 class="logo-title">FLIP GUARDIAN</h5>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="nav-item"><a href="dashboard.html" class="nav-link"><span class="nav-icon"><ion-icon name="home" class="icon"></ion-icon></span> Dashboard</a></li>
+                    <li class="nav-item"><a href="project.html" class="nav-link active"><span class="nav-icon"><ion-icon name="stats-chart" class="icon"></ion-icon></span> Projects</a></li>
+                    <li class="nav-item"><a href="publish.html" class="nav-link"><span class="nav-icon"><ion-icon name="card" class="icon"></ion-icon></span> Publishing</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Collaboration</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Insights</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Media</a></li>
+                </ul>
+                <div class="bottom-links">
+                    <h5 class="heading">ACCOUNT PAGES</h5>
+                    <ul class="sidebar-nav">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="person" class="icon"></ion-icon></span> Profile</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="document" class="icon"></ion-icon></span> Sign In</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="rocket" class="icon"></ion-icon></span> Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     <main class="wrapper" id="wrapper">
-        <header class="main-header">
+        <div class="page-contents">
             <nav class="navbar">
                 <div class="breadcrumbs-div">
                     <div class="path"><span class="prev-page">Pages</span> <span class="curr-page">/ Projects</span></div>
@@ -42,33 +67,6 @@
                     </button>
                 </div>
             </nav>
-
-            <div class="sidebar" id="sidebar">
-                <div class="inner">
-                    <div class="top-header">
-                        <h5 class="logo-title">FLIP GUARDIAN</h5>
-                    </div>
-                    <ul class="sidebar-nav">
-                        <li class="nav-item"><a href="dashboard.html" class="nav-link"><span class="nav-icon"><ion-icon name="home" class="icon"></ion-icon></span> Dashboard</a></li>
-                        <li class="nav-item"><a href="project.html" class="nav-link active"><span class="nav-icon"><ion-icon name="stats-chart" class="icon"></ion-icon></span> Projects</a></li>
-                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="card" class="icon"></ion-icon></span> Publishing</a></li>
-                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Collaboration</a></li>
-                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Insights</a></li>
-                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Media</a></li>
-                    </ul>
-                    <div class="bottom-links">
-                        <h5 class="heading">ACCOUNT PAGES</h5>
-                        <ul class="sidebar-nav">
-                            <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="person" class="icon"></ion-icon></span> Profile</a></li>
-                            <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="document" class="icon"></ion-icon></span> Sign In</a></li>
-                            <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="rocket" class="icon"></ion-icon></span> Sign Up</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="page-height">
             <div class="padding-div">
                 <div class="inner-cards-row">
                     <div class="quick-cards">
@@ -145,6 +143,154 @@
                                 <a href="javascript:void(0)" class="add-project">
                                     <img src="assests/images/plus-icon.svg" alt="Add" class="plus-icon">
                                 </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 position-relative h-100">
+                            <div class="project-list">
+                                <div class="project-list-card rate-card">
+                                    <div class="title-div">
+                                        <h5 class="project-name">Project name</h5>
+                                        <div class="members-imgdiv">
+                                            <img src="assests/images/user5.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user4.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user3.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user2.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user1.jpeg" alt="Users" class="img-fluid user-img">
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar-sec w-100">
+                                        <div class="percent">
+                                            <svg>
+                                              <circle cx="105" cy="105" r="100"></circle>
+                                              <circle cx="105" cy="105" r="100" style="--percent: 90"></circle>
+                                            </svg>
+                                            <div class="icon-div">
+                                                <ion-icon name="happy-outline" class="icon"></ion-icon>
+                                            </div>
+                                        </div>
+                                        <div class="info-div">
+                                            <span class="per fs-esmall">0%</span>
+                                            <div class="current-per">
+                                                <span class="current">60%</span>
+                                                <span class="text fs-esmall">Project progress</span>
+                                            </div>
+                                            <span class="per fs-esmall">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <h6 class="start-date">Project start date: 11-11-2023</h6>
+                                        <a href="javascript:void(0)" class="continue-outline-btn">Click to Continue </a>
+                                    </div>
+                                </div>
+
+                                <div class="project-list-card rate-card">
+                                    <div class="title-div">
+                                        <h5 class="project-name">Project name</h5>
+                                        <div class="members-imgdiv">
+                                            <img src="assests/images/user5.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user4.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user3.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user2.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user1.jpeg" alt="Users" class="img-fluid user-img">
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar-sec w-100">
+                                        <div class="percent">
+                                            <svg>
+                                              <circle cx="105" cy="105" r="100"></circle>
+                                              <circle cx="105" cy="105" r="100" style="--percent: 90"></circle>
+                                            </svg>
+                                            <div class="icon-div">
+                                                <ion-icon name="happy-outline" class="icon"></ion-icon>
+                                            </div>
+                                        </div>
+                                        <div class="info-div">
+                                            <span class="per fs-esmall">0%</span>
+                                            <div class="current-per">
+                                                <span class="current">60%</span>
+                                                <span class="text fs-esmall">Project progress</span>
+                                            </div>
+                                            <span class="per fs-esmall">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <h6 class="start-date">Project start date: 11-11-2023</h6>
+                                        <a href="javascript:void(0)" class="continue-outline-btn">Click to Continue </a>
+                                    </div>
+                                </div>
+
+                                <div class="project-list-card rate-card">
+                                    <div class="title-div">
+                                        <h5 class="project-name">Project name</h5>
+                                        <div class="members-imgdiv">
+                                            <img src="assests/images/user5.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user4.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user3.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user2.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user1.jpeg" alt="Users" class="img-fluid user-img">
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar-sec w-100">
+                                        <div class="percent">
+                                            <svg>
+                                              <circle cx="105" cy="105" r="100"></circle>
+                                              <circle cx="105" cy="105" r="100" style="--percent: 90"></circle>
+                                            </svg>
+                                            <div class="icon-div">
+                                                <ion-icon name="happy-outline" class="icon"></ion-icon>
+                                            </div>
+                                        </div>
+                                        <div class="info-div">
+                                            <span class="per fs-esmall">0%</span>
+                                            <div class="current-per">
+                                                <span class="current">60%</span>
+                                                <span class="text fs-esmall">Project progress</span>
+                                            </div>
+                                            <span class="per fs-esmall">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <h6 class="start-date">Project start date: 11-11-2023</h6>
+                                        <a href="javascript:void(0)" class="continue-outline-btn">Click to Continue </a>
+                                    </div>
+                                </div>
+
+                                <div class="project-list-card rate-card">
+                                    <div class="title-div">
+                                        <h5 class="project-name">Project name</h5>
+                                        <div class="members-imgdiv">
+                                            <img src="assests/images/user5.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user4.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user3.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user2.jpeg" alt="Users" class="img-fluid user-img">
+                                            <img src="assests/images/user1.jpeg" alt="Users" class="img-fluid user-img">
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar-sec w-100">
+                                        <div class="percent">
+                                            <svg>
+                                              <circle cx="105" cy="105" r="100"></circle>
+                                              <circle cx="105" cy="105" r="100" style="--percent: 90"></circle>
+                                            </svg>
+                                            <div class="icon-div">
+                                                <ion-icon name="happy-outline" class="icon"></ion-icon>
+                                            </div>
+                                        </div>
+                                        <div class="info-div">
+                                            <span class="per fs-esmall">0%</span>
+                                            <div class="current-per">
+                                                <span class="current">60%</span>
+                                                <span class="text fs-esmall">Project progress</span>
+                                            </div>
+                                            <span class="per fs-esmall">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <h6 class="start-date">Project start date: 11-11-2023</h6>
+                                        <a href="javascript:void(0)" class="continue-outline-btn">Click to Continue </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
