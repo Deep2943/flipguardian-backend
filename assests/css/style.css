@@ -198,9 +198,10 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .publish-card .link-cards .label{font-size: 14px;font-weight: 700;line-height: 20px;color: #FFFFFFCC;margin-bottom: 20px;}
 .publish-card .cards-div .inner-card{background: linear-gradient(180deg, #001B3B 0%, #003A65 100%);border-radius: 10px;display: flex;text-decoration: none;align-items: center;justify-content: center;flex-direction: column;padding: 35px 0;}
 .publish-card .cards-div .card-img{width: 65px;height: 65px;}
-.publish-card .cards-div .card-title{margin-top: 30px;font-size: 14px;font-weight: 700;line-height: 20px;color: #FFFFFFCC;text-decoration: none;}
+.publish-card .cards-div .card-title{margin-top: 30px;font-size: 14px;font-weight: 700;line-height: 20px;color: #FFFFFFCC;text-decoration: none;margin-bottom: 0;}
 .publishing-chart-div .chart-div{height: 225px;}
 
+.project-campaigns.active-campaigns-card .sec-title-div{margin-bottom: 40px;}
 
 @media (min-width: 1199px){
     .wrapper{padding-left: 256px;}
@@ -250,4 +251,7 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
     .project-list-card:nth-last-child(3),.project-list-card:nth-last-child(2),.project-list-card:nth-last-child(1){display: none;}
 
     .dark-table{padding: 34px;}
+    .publish-card .cards-div{gap: 15px 0;}
+    .publish-card .cards-div .inner-card{padding: 25px 0;}
+    .publish-card{padding: 35px;}
 }
