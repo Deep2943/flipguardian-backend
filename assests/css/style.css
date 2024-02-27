@@ -59,7 +59,7 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .nav-slide-open button.navbar-toggler .navbar-dash:nth-child(3){transform:rotate(-45deg) translate(2px,-8px);}
 
 
-.page-contents{min-height: calc(100vh - 113px) !important;}
+.page-contents{min-height: calc(100vh - 34px) !important;}
 .fs-esmall{font-size: 12px;font-weight: 500;line-height: 12px;color: #fff;margin: 0;}
 .fs-small{font-size: 14px;font-weight: 500;line-height: 14px;color: var(--gray-color);margin: 0;}
 .fs-medium{font-size: 16px;font-weight: 400;line-height: 24px;color: var(--gray-color);margin: 0;}
@@ -89,11 +89,11 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .progress-bar-sec{display: flex;align-items: center;justify-content: center;padding-top: 0;position: relative;flex-direction: column;}
 .rate-card .percent {position: relative;}
 .rate-card .progress-bar-sec .icon-div{width: 48px;height: 48px;border-radius: 50%;background: var(--primary-color);display: flex;align-items: center;justify-content: center;position: absolute;left: 50%;top: 40%;transform: translate(-50%,-50%);}
-.rate-card .progress-bar-sec .info-div{padding: 19px 25px;display: flex;border-radius: 20px;background: #000518;position: absolute;bottom: 0;left: 0;right: 0;z-index: 11;justify-content: space-between;}
-.rate-card .progress-bar-sec .info-div .per{color: var(--gray-color);}
-.rate-card .progress-bar-sec .info-div .current-per{display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 6px 0;}
-.rate-card .progress-bar-sec .info-div .current-per .text{text-align: center;color: var(--gray-color);}
-.rate-card .progress-bar-sec .info-div .current-per .current{font-size: 28px;font-weight: 700;line-height: 28px;color: #fff;}
+.progress-bar-sec .info-div{padding: 19px 25px;display: flex;border-radius: 20px;background: #000518;position: absolute;bottom: 0;left: 0;right: 0;z-index: 11;justify-content: space-between;}
+.progress-bar-sec .info-div .per{color: var(--gray-color);}
+.progress-bar-sec .info-div .current-per{display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 6px 0;}
+.progress-bar-sec .info-div .current-per .text{text-align: center;color: var(--gray-color);}
+.progress-bar-sec .info-div .current-per .current{font-size: 28px;font-weight: 700;line-height: 28px;color: #fff;}
 .rate-card .progress-bar-sec .icon-div .icon{width: 30px;height: 30px;color: #fff;}
 .percent svg {position: relative;width: 212px;height: 212px;transform: rotate(18deg);}  
 .percent svg circle {width: 100%;height: 100%;fill: none;stroke: #22234B;stroke-width: 10;stroke-linecap: round;}  
@@ -203,6 +203,64 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 
 .project-campaigns.active-campaigns-card .sec-title-div{margin-bottom: 40px;}
 
+.notification-sec .sec-title{display: flex;justify-content: space-between;align-items: center;}
+.notification-sec .sec-title .view-all-link{text-decoration: none;color: #fff;line-height: 19px;}
+.notification-sec .sec-title{margin-bottom: 20px;}
+
+.notification-card{background: #0F092B;border-radius: 28px;padding: 29px 23px;display: flex;gap: 0 15px;position: relative;overflow: hidden;}
+.notification-card::before{content: "";position: absolute;width: 330px;height: 330px;border: 6px solid #FFFBFB;border-radius: 50%;right: -180px;top: 60px;}
+.notification-card::after{content: "";position: absolute;width: 360px;height: 360px;border: 1px solid #FFFBFB;border-radius: 50%;right: -215px;top: 80px;}
+.notification-card .icon{width: 25px;height: 25px;color: #fff;}
+.notification-card .date{margin-top: 14px;color: #FFFFFFB2;margin-bottom: 10px;}
+.notification-card .rounded-btn{box-shadow: 0px 3.5px 5.5px 0px #00000005;background: #00109E;border-radius: 26px;padding: 8px 30px;font-size: 16px;font-weight: 400;line-height: 22px;color: #fff;text-decoration: none;display: block;width: fit-content;}
+.notification-card .fs-large{font-weight: 500;}
+
+.team-members-chat{display: flex;justify-content: space-between;align-items: center;margin-top: 50px;gap: 0 35px;margin-bottom: 30px;}
+.team-members-chat .fs-large{font-weight: 500;}
+.team-members-chat .members-imgdiv .user-img{width: 46px;height: 46px;border-color: #fff;object-fit: cover;margin-right: -17px;}
+.team-members-chat .white-outline-btn{text-decoration: none;border: 1px solid #fff;border-radius: 10px;display: flex;align-items: center;justify-content: center;padding: 12px 45px;font-size: 18px;font-weight: 500;line-height: 25px;color: #fff;}
+
+.team-chat-sec .fs-large{font-weight: 500;text-align: center;margin-bottom: 13px;}
+
+.chat-card{background: #101243;border: 1px solid #E1E2FF;border-radius: 20px;padding: 85px 29px 75px 29px;}
+.chat-card .chat-list{display: flex;flex-direction: column;gap: 15px 0;}
+.chat-card .message-card{display: flex;align-items: center;}
+.chat-card .message-card.received-message{gap: 0 30px;}
+.chat-card .image-card{width: 30px;height: 30px;min-width: 30px;border-radius: 50%;}
+.chat-card .image-card span{font-family: "Roboto", sans-serif;font-size: 20px;font-weight: 400;line-height: 20px;letter-spacing: 0.14px;text-align: center;color: #fff;}
+.chat-card .message-card.received-message .image-card{background: #7879F1;border-radius: 64px;display: flex;align-items: center;justify-content: center;}
+.chat-card .message-card .message-div{display: flex;flex-direction: column;gap: 7px 0;}
+.chat-card .message-card.received-message .message{border: 1px solid #6C6C6C;background: #fff;font-family: "Roboto", sans-serif;color: #5D5D5D;}
+.chat-card .message-card .message{border-radius: 10px;padding: 8px 10px 8px 12px;margin-bottom: 0;font-size: 12px;font-weight: 400;line-height: 20px;letter-spacing: 0.14px;text-align: left;max-width: 360px;}
+.chat-card .message-card .time{margin-bottom: 0;font-family: "Public Sans", sans-serif;font-size: 10px;font-weight: 400;line-height: 12px;text-align: left;color: #333333;padding-left: 10px;}
+
+.chat-card .message-card.sent-message{justify-content: end;gap: 0 15px;}
+.chat-card .message-card.sent-message .chat-user{border-radius: 50%;object-fit: cover;}
+.chat-card .message-card.sent-message .message-div .message{background: #000000;color: #FFFFFF;}
+.chat-card .message-card.sent-message .time{text-align: end;}
+
+
+.collab-project-list{display: flex;flex-direction: column;gap: 15px 0;}
+.collab-project-card{box-shadow: 0px 0px 15px 0px #FFFFFF40;background: #04001C;border-radius: 20px;padding: 20px 30px 20px 40px;}
+.collab-project-card .top-content{display: flex;justify-content: space-between;align-items: center;gap: 0 30px;margin-bottom: 35px;}
+.collab-project-card .top-content .fs-medium{color: #fff;font-weight: 500;}
+.collab-project-card .top-content .fs-small{color:#FFFFFFB2;line-height: 20px;font-weight: 700;}
+.collab-project-card .progress-bar-sec .info-div{position: unset;transform: unset;background: linear-gradient(126.97deg, rgba(6, 11, 40, 0.74) 28.26%, rgba(10, 14, 35, 0.71) 91.2%);gap: 0 50px;}
+.collab-project-card .content{display: flex;align-items: end;gap: 0 35px;}
+
+.calendar-div{background: #04001C;border-radius: 20px;padding: 14px;height: 100%;}
+.calendar-div .fc .fc-toolbar-title{font-size: 14px;font-weight: 500;line-height: 20px;letter-spacing: 0.1px;text-align: center;color: #fff;}
+.calendar-div .fc .fc-button-group > .fc-button{background: transparent;border: 0;}
+.calendar-div .fc .fc-button-group > .fc-button:focus{outline: 0;box-shadow: none;}
+.calendar-div * a{color: #fff;text-decoration: none;font-size: 14px;line-height: 20px;}
+.fc-theme-standard td, .fc-theme-standard th{border: 0;}
+.fc-theme-standard .fc-scrollgrid{border: 0;}
+.fc .fc-daygrid-day-top{text-align: center;align-items: center;justify-content: center;}
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events{display: none;}
+.fc .fc-daygrid-day.fc-day-today{background: transparent;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;}
+.fc .fc-day-today .fc-daygrid-day-frame{background: #00109E;border-radius: 50%;width: 40px;height: 40px;min-height: 40px;}
+.fc .fc-daygrid-day-frame{display: flex;align-items: center;justify-content: center;}
+
 @media (min-width: 1199px){
     .wrapper{padding-left: 256px;}
     .sidebar{transform: translate3d(0,0,0);left: 10px;}
@@ -254,4 +312,10 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
     .publish-card .cards-div{gap: 15px 0;}
     .publish-card .cards-div .inner-card{padding: 25px 0;}
     .publish-card{padding: 35px;}
+
+    .wrapper .navbar{padding: 0 30px 29px 30px;}
+    .chat-card1{padding: 65px 25px 65px 25px;}
+    .team-members-chat{flex-direction: column;gap: 10px 0;}
+    .collab-project-card .content{flex-direction: column-reverse;align-items: center;gap: 10px 0;}
+    .collab-project-card .top-content{flex-direction: column;gap: 10px 0;}
 }
