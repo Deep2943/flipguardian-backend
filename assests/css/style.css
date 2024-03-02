@@ -261,6 +261,69 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .fc .fc-day-today .fc-daygrid-day-frame{background: #00109E;border-radius: 50%;width: 40px;height: 40px;min-height: 40px;}
 .fc .fc-daygrid-day-frame{display: flex;align-items: center;justify-content: center;}
 
+.profile-row{gap: 15px 0;}
+.profile-card{background: #04001C;border-radius: 20px;padding: 60px 50px 11px 70px;position: relative;z-index: 2;height: 100%;display: flex;flex-direction: column;}
+.border-bg{position: absolute;left: 0;top: 15px;z-index: -1;width: 100%;}
+.profile-card .profile-info{display: flex;align-items: center;gap: 0 75px;}
+.profile-card .profile-info .img-div .profile-img{width: 157px;height: 157px;border-radius: 50%;object-fit: cover;min-width: 157px;}
+.profile-card .profile-info .text-content{display: flex;flex-direction: column;gap: 5px 0;}
+.profile-card .profile-info .text-content .name{font-size: 16px;font-weight: 500;line-height: 22px;color: #fff;margin: 0;}
+.profile-card .profile-info .text-content .username{font-size: 14px;font-weight: 300;line-height: 20px;margin: 0;color: #fff;}
+.profile-card .profile-info .text-content .username span{font-weight: 500;}
+.profile-card .membership-div{display: flex;align-items: center;justify-content: center;gap: 6px 0;flex-direction: column;margin-bottom: 50px;}
+.profile-card .membership-div .star-img{height: 57px;}
+.profile-card .membership-div .membership-text{font-size: 14px;font-weight: 500;line-height: 20px;margin: 0;color: #fff;}
+.blue-btn{background: linear-gradient(90deg, #721AE3 0%, #0058C0 100%);border-radius: 7px;padding: 15px 20px;text-decoration: none;font-size: 14px;font-weight: 500;line-height: 20px;color: #fff;}
+.blue-btn:hover{color: #fff;}
+.profile-card .bottom-content{display: flex;align-items: center;justify-content: flex-start;gap: 10px 90px;margin-top: auto;}
+.profile-card .bottom-content .bottom-text{font-size: 14px;font-weight: 300;line-height: 20px;color: #FFFFFFB2;margin: 0;}
+
+.membership-card{position: relative;background: #04001C;z-index: 2;border-radius: 20px;padding: 35px 25px;height: 100%;overflow: hidden;}
+.membership-card .border-bg{top: 55px;}
+.membership-card .card-title{font-size: 14px;font-weight: 500;line-height: 20px;color: #FFFFFF;margin: 0;text-align: center;}
+.membership-card .membership-div{display: flex;align-items: center;justify-content: center;gap: 25px 0;flex-direction: column;margin: 60px 0 30px 0;}
+.membership-card .membership-div .star-img{height: 105px;}
+.membership-card .membership-div .membership-text{margin: 0;font-size: 14px;font-weight: 500;line-height: 20px;color: #FFFFFFB2;}
+.membership-card .membership-div .blue-btn{padding: 22px 45px;}
+.membership-card .bottom-content{display: flex;align-items: center;gap: 0 50px;}
+.membership-card .bottom-content .bottom-text{font-size: 14px;font-weight: 500;line-height: 20px;color: #FFFFFFB2;margin: 0;}
+.membership-card .bottom-content .bottom-text .bottom-icon{width: 21px;height: 21px;}
+
+.ai-usage-card{position: relative;z-index: 2;background: #04001C;height: 100%;border-radius: 20px;display: flex;flex-direction: column;justify-content: space-between;padding: 35px 17px 50px 17px;align-items: center;overflow: hidden;gap: 40px 0;}
+.ai-usage-card .border-bg, .upgrades-applied-card .border-bg{object-fit: contain;transform: rotate(-10deg);top: 60px;left: 0;}
+.ai-usage-card .card-title{margin-bottom: 0;font-size: 14px;font-weight: 500;line-height: 20px;color: #fff;}
+.ai-usage-card .count-div{display: flex;flex-direction: column;gap: 10px 0;text-align: center;align-items: center;}
+.ai-usage-card .count-div .count{font-size: 28px;font-weight: 500;line-height: 39px;color: #fff;margin-bottom: 0;}
+.ai-usage-card .count-div .text{font-size: 16px;font-weight: 500;line-height: 22px;color: #FFFFFFB2;margin: 0;}
+.ai-usage-card .message{font-size: 14px;font-weight: 500;line-height: 20px;color: #FFFFFFB2;margin-bottom: 0;}
+
+.input-row{gap: 15px 0;}
+.input-field-card{background: #04001C;position: relative;z-index: 2;overflow: hidden;border-radius: 20px;padding: 50px 35px;height: 100%;}
+.form-row{display: flex;flex-direction: column;gap: 30px 0;}
+.form-row .label{font-size: 16px;font-weight: 500;line-height: 20px;color: #FFFFFF94;margin-bottom: 2px;display: block;}
+.form-row .form-groups .input-group{display: flex;gap: 0 15px;width: 100%;flex-wrap: nowrap;}
+.form-row .form-groups .input-group .light-input{width: 100%;border: 2px solid #FFFFFF;border-radius: 8px !important;padding: 13px 18px;font-size: 12px;font-weight: 300;line-height: 15px;color: #fff;background: transparent;}
+.form-row .form-groups .input-group .light-input::placeholder{color: #fff;}
+.form-row .form-groups .save-btn{border-radius: 7px !important;background-color: var(--primary-color);padding: 10px 35px;border: 0;font-size: 14px;font-weight: 500;line-height: 20px;color: #fff;}
+.input-field-card .message{font-size: 15px;font-weight: 500;line-height: 21px;color: #FFFFFFB2;margin-bottom: 0;}
+.custom-upload{background-color:transparent;border:1px solid var(--primary-color);border-radius:7px;padding:10px 60px 10px 15px;cursor:pointer;display:flex;align-items:center;gap:0 30px;color:#fff;width:fit-content;font-family:Lexend;font-size:14px;font-weight:500;line-height:20px;color: #FFFFFFD9;}
+.custom-upload input {left: -9999px; position: absolute;}
+.upload-div .upload{display: flex;flex-direction: column;gap: 8px 0;}
+.upload-div{display: flex;justify-content: center;align-items: center;gap: 0 50px;}
+
+.upgrades-applied-card{background-color: #04001C;border-radius: 20px;position: relative;z-index: 2;padding: 35px 15px;overflow: hidden;height: 100%;}
+.upgrades-applied-card .card-title{margin-bottom: 0;font-size: 14px;font-weight: 500;line-height: 20px;color: #fff;text-align: center;}
+.upgrades-applied-card .inner-content{margin-top: 55px;display: flex;flex-direction: column;gap: 30px 0;}
+.upgrades-applied-card .inner-content .text{font-size: 14px;font-weight: 500;line-height: 20px;color: #FFFFFFB2;margin: 0;}
+.upgrades-applied-card .upload .custom-upload{padding: 10px 20px 10px 25px;gap: 0 20px;}
+
+@media (max-width:1400px) {
+    .profile-card{padding: 50px 50px 11px 50px;}
+    .profile-card .profile-info .img-div .profile-img{width: 120px;height: 120px;min-width: 120px;}
+    .profile-card .profile-info{gap: 0 40px;}
+
+    .upgrades-applied-card .upload .custom-upload{flex-wrap: wrap;align-items: center;justify-content: center;text-align: center;padding: 15px;}
+}
 @media (min-width: 1199px){
     .wrapper{padding-left: 256px;}
     .sidebar{transform: translate3d(0,0,0);left: 10px;}
@@ -268,11 +331,45 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 @media (max-width:1200px) {
     button.navbar-toggler{display: block;}
     .navbar .right-links .links{color: #fff;}
+
+    .upload-div{gap: 0 20px;}
+    .custom-upload{padding: 10px 40px 10px 15px;}
 }
 @media (max-width:991px) {
     .chart-row, .table-row{gap: 15px 0;}
 
     .start-project-card .add-project{position: unset;transform: unset;height: auto;}
+}
+@media (max-width:576px) {
+    .profile-card .profile-info .img-div .profile-img{width: 80px;height: 80px;min-width: 80px;}
+    .profile-card .profile-info{gap: 0 20px;}
+    .profile-card, .membership-card, .ai-usage-card, .input-field-card, .upgrades-applied-card{padding: 30px 25px;}
+    .membership-card .membership-div .blue-btn{padding: 18px 30px;}
+    .membership-card .membership-div .star-img{height: 85px;}
+    .membership-card .membership-div{margin: 40px 0 30px 0;gap: 15px 0;}
+    .membership-card .bottom-content .bottom-text{font-size: 12px;}
+    .membership-card .bottom-content .bottom-text .bottom-icon{width: 15px;height: 15px;}
+    .membership-card .bottom-content{gap: 10px;flex-direction: column;}
+    .blue-btn{padding: 10px 16px;}
+    .profile-card .membership-div{margin-bottom: 30px;}
+    .profile-card .bottom-content .bottom-text{font-size: 12px;line-height: 18px}
+    .profile-card .bottom-content{gap: 10px;flex-direction: column;align-items: center;}
+    .ai-usage-card .count-div .count{font-size: 24px;line-height: 34px;}
+    .ai-usage-card .count-div .text{font-size: 14px;}
+    .ai-usage-card .message{font-size: 12px;}
+    .ai-usage-card{gap: 25px 0;}
+
+    .form-row .label{font-size: 14px;}
+    .form-row .form-groups .save-btn{padding: 10px 18px;font-size: 12px;}
+    .form-row .form-groups .input-group .light-input{padding: 12px;}
+    .form-row{gap: 25px 0;}
+    .input-field-card .message, .upgrades-applied-card .inner-content .text{font-size: 12px;}
+    .upgrades-applied-card .inner-content{gap: 25px 0;margin-top: 30px;align-items: center;}
+    .profile-card .profile-info .text-content .username{font-size: 13px;}
+    .profile-card .profile-info .text-content .name{font-size: 14px;}
+    .profile-card .membership-div .star-img{height: 45px;}
+    .upload-div{flex-direction: column;justify-content: start;gap: 15px 0;}
+    .form-row .form-groups .input-group{gap: 0 10px;}
 }
 @media (max-width:575px) {
     .wrapper{overflow: hidden;}

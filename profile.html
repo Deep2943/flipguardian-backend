@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile | Flipguardian</title>
+    <link rel="icon" type="image/x-icon" href="assests/images/favicon.png">
+
+    <!-- CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assests/css/style.css">
+
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Javascript  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="assests/js/script.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="sidebar" id="sidebar">
+            <div class="inner">
+                <div class="top-header">
+                    <h5 class="logo-title">FLIP GUARDIAN</h5>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="nav-item"><a href="dashboard.html" class="nav-link"><span class="nav-icon"><ion-icon name="home" class="icon"></ion-icon></span> Dashboard</a></li>
+                    <li class="nav-item"><a href="project.html" class="nav-link"><span class="nav-icon"><ion-icon name="stats-chart" class="icon"></ion-icon></span> Projects</a></li>
+                    <li class="nav-item"><a href="publish.html" class="nav-link"><span class="nav-icon"><ion-icon name="card" class="icon"></ion-icon></span> Publishing</a></li>
+                    <li class="nav-item"><a href="collaboration.html" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Collaboration</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Insights</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Media</a></li>
+                </ul>
+                <div class="bottom-links">
+                    <h5 class="heading">ACCOUNT PAGES</h5>
+                    <ul class="sidebar-nav">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link active"><span class="nav-icon"><ion-icon name="person" class="icon"></ion-icon></span> Profile</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="document" class="icon"></ion-icon></span> Sign In</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="rocket" class="icon"></ion-icon></span> Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="wrapper" id="wrapper">
+        <div class="page-contents">
+            <nav class="navbar">
+                <div class="breadcrumbs-div">
+                    <div class="path"><span class="prev-page">Pages</span> <span class="curr-page">/ Account</span></div>
+                    <h6 class="current-page">User profile</h6>
+                </div>
+                <div class="right-content">
+                    <div class="right-links">
+                        <a href="javascript:void(0)" class="links with-text"><ion-icon name="person" class="icon"></ion-icon>Sign In</a>
+                        <a href="javascript:void(0)" class="links"><ion-icon name="settings" class="icon"></ion-icon></a>
+                        <a href="javascript:void(0)" class="links"><ion-icon name="notifications" class="icon"></ion-icon></a>
+                    </div>
+                    <button type="button" class="btn navbar-toggler border-0 toggle-menu" onclick="toggleSlide()" id="slide-toggle">
+                        <span class="navbar-dash"></span>
+                        <span class="navbar-dash"></span>
+                        <span class="navbar-dash"></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="padding-div">
+                <div class="inner-cards-row">
+                    <div class="row profile-row">
+                        <div class="col-lg-5 card-col">
+                            <div class="profile-card">
+                                <img src="assests/images/bordered-round.png" alt="Round" class="img-fluid border-bg">
+                                <div class="profile-info">
+                                    <div class="img-div">
+                                        <img src="assests/images/user1.jpeg" alt="Alix Nilesh" class="img-fluid profile-img">
+                                    </div>
+                                    <div class="text-content">
+                                        <h6 class="name">Alix Nilesh</h6>
+                                        <h6 class="username"><span>username:</span> Alix</h6>
+                                        <h6 class="username"><span>email:</span> nileshalix@gmail.com</h6>
+                                    </div>
+                                </div>
+                                <div class="membership-div">
+                                    <img src="assests/images/star.png" alt="Star" class="img-fluid star-img">
+                                    <h4 class="membership-text">Platinum Lifetime</h4>
+                                    <a href="javascript:void(0)" class="blue-btn">Upgrade Membership</a>
+                                </div>
+                                <div class="bottom-content">
+                                    <p class="bottom-text">Member since: Dec, 2023</p>
+                                    <p class="bottom-text">Last login: 1/March/2024</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 card-col">
+                            <div class="membership-card">
+                                <img src="assests/images/bordered-round.png" alt="Round" class="img-fluid border-bg">
+                                <h4 class="card-title">Membership</h4>
+                                <div class="membership-div">
+                                    <img src="assests/images/star.png" alt="Star" class="img-fluid star-img">
+                                    <h4 class="membership-text">Platinum Lifetime</h4>
+                                    <a href="javascript:void(0)" class="blue-btn">Upgrade Membership</a>
+                                </div>
+                                <div class="bottom-content">
+                                    <div class="bottom-text">Upgrade to: <img src="assests/images/gold.png" alt="Gold Lifetime" class="img-fluid bottom-icon"> Gold Lifetime</div>
+                                    <div class="bottom-text"><img src="assests/images/diamond.png" alt="Diamond Lifetime" class="img-fluid bottom-icon"> Diamond Lifetime</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 card-col">
+                            <div class="ai-usage-card">
+                                <img src="assests/images/bordered-round-two.png" alt="Round" class="img-fluid border-bg">
+                                <h4 class="card-title">AI Engine Usage</h4>
+                                <div class="count-div">
+                                    <h4 class="count">12/20</h4>
+                                    <h4 class="text">This Month</h4>
+                                </div>
+                                <p class="message">Lorem ipsum dolor sit amet consectetur. Praesent et at gravida condimentum elementum. Ornare pellentesque est tellus enim diam id.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row input-row">
+                        <div class="col-xl-5 col-lg-6 card-col">
+                            <div class="input-field-card">
+                                <img src="assests/images/bordered-round.png" alt="Round" class="img-fluid border-bg">
+                                <div class="form-row">
+                                    <div class="form-groups">
+                                        <label class="label">Publisher name:</label>
+                                        <div class="input-group">
+                                            <input type="text" name="publisher_name" class="light-input" placeholder="Type in name">
+                                            <button type="button" class="save-btn">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-groups">
+                                        <label class="label">Support URL:</label>
+                                        <div class="input-group">
+                                            <input type="text" name="publisher_name" class="light-input" placeholder="Paste URL here">
+                                            <button type="button" class="save-btn">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-groups">
+                                        <label class="label">Support email:</label>
+                                        <div class="input-group">
+                                            <input type="text" name="publisher_name" class="light-input" placeholder="Type in email here">
+                                            <button type="button" class="save-btn">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-groups">
+                                        <label class="label">Terms of service URL:</label>
+                                        <div class="input-group">
+                                            <input type="text" name="publisher_name" class="light-input" placeholder="TOS URL">
+                                            <button type="button" class="save-btn">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 card-col">
+                            <div class="input-field-card">
+                                <img src="assests/images/bordered-round.png" alt="Round" class="img-fluid border-bg">
+                                <div class="form-row">
+                                    <p class="message">IMPORTANT: The four sections below (Whitelabel URL, Address, Player Image and Email Image) must ALL be filled in for custom branding to work.</p>
+                                    <div class="form-groups">
+                                        <label class="label">Whitelabel URL</label>
+                                        <div class="input-group">
+                                            <input type="text" name="publisher_name" class="light-input" placeholder="Type in name">
+                                            <button type="button" class="save-btn">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-groups">
+                                        <label class="label">Whitelabel address</label>
+                                        <div class="input-group">
+                                            <input type="text" name="publisher_name" class="light-input" placeholder="Paste URL here">
+                                            <button type="button" class="save-btn">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="upload-div">
+                                        <div class="upload">
+                                            <label class="custom-upload"><input type="file" name="upload_file" /><img src="assests/images/drive.svg" alt="Upload"> Upload</label>
+                                            <label class="label">Whitelabel player image</label>
+                                        </div>
+                                        <div class="upload">
+                                            <label class="custom-upload"><input type="file" name="upload_file_2" /><img src="assests/images/drive.svg" alt="Upload"> Upload</label>
+                                            <label class="label">Whitelabel email image</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 card-col">
+                            <div class="upgrades-applied-card">
+                                <img src="assests/images/bordered-round.png" alt="Round" class="img-fluid border-bg">
+                                <h4 class="card-title">AI Engine Usage</h4>
+                                <div class="inner-content">
+                                    <p class="text">White Label Upgrade applied Pro Upgrade applied Instant Library available -</p>
+                                    <div class="upload">
+                                        <label class="custom-upload"><input type="file" name="upload_file_3" /><img src="assests/images/drive.svg" alt="Upload"> Downlad here</label>
+                                    </div>
+                                    <p class="text">Lifetime Upgrade applied Platinum Upgrade applied</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <footer class="footer">
+                    <div class="inner-content">
+                        <a href="javascript:void(0)" class="footer-link">Members</a>
+                        <a href="javascript:void(0)" class="footer-link">Templates</a>
+                        <a href="javascript:void(0)" class="footer-link">Blog</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
