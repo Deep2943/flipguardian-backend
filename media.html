@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media | Flipguardian</title>
+    <link rel="icon" type="image/x-icon" href="assests/images/favicon.png">
+
+    <!-- CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assests/css/style.css">
+
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Javascript  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="assests/js/script.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="sidebar" id="sidebar">
+            <div class="inner">
+                <div class="top-header">
+                    <h5 class="logo-title">FLIP GUARDIAN</h5>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="nav-item"><a href="dashboard.html" class="nav-link"><span class="nav-icon"><ion-icon name="home" class="icon"></ion-icon></span> Dashboard</a></li>
+                    <li class="nav-item"><a href="project.html" class="nav-link"><span class="nav-icon"><ion-icon name="stats-chart" class="icon"></ion-icon></span> Projects</a></li>
+                    <li class="nav-item"><a href="publish.html" class="nav-link"><span class="nav-icon"><ion-icon name="card" class="icon"></ion-icon></span> Publishing</a></li>
+                    <li class="nav-item"><a href="collaboration.html" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Collaboration</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Insights</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link active"><span class="nav-icon"><ion-icon name="build" class="icon"></ion-icon></span> Media</a></li>
+                </ul>
+                <div class="bottom-links">
+                    <h5 class="heading">ACCOUNT PAGES</h5>
+                    <ul class="sidebar-nav">
+                        <li class="nav-item"><a href="profile.html" class="nav-link"><span class="nav-icon"><ion-icon name="person" class="icon"></ion-icon></span> Profile</a></li>
+                        <li class="nav-item"><a href="media.html" class="nav-link"><span class="nav-icon"><ion-icon name="document" class="icon"></ion-icon></span> Sign In</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link"><span class="nav-icon"><ion-icon name="rocket" class="icon"></ion-icon></span> Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="wrapper" id="wrapper">
+        <div class="page-contents">
+            <nav class="navbar">
+                <div class="breadcrumbs-div">
+                    <div class="path"><span class="prev-page">Pages</span> <span class="curr-page">/ Media</span></div>
+                    <h6 class="current-page">Media Library (Audio/Video Summarization / Transcription)</h6>
+                </div>
+                <div class="right-content">
+                    <div class="right-links">
+                        <a href="javascript:void(0)" class="links with-text"><ion-icon name="person" class="icon"></ion-icon>Sign In</a>
+                        <a href="javascript:void(0)" class="links"><ion-icon name="settings" class="icon"></ion-icon></a>
+                        <a href="javascript:void(0)" class="links"><ion-icon name="notifications" class="icon"></ion-icon></a>
+                    </div>
+                    <button type="button" class="btn navbar-toggler border-0 toggle-menu" onclick="toggleSlide()" id="slide-toggle">
+                        <span class="navbar-dash"></span>
+                        <span class="navbar-dash"></span>
+                        <span class="navbar-dash"></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="padding-div">
+                <div class="inner-cards-row media-page-row">
+                    <div class="upload-media">
+                        <button type="button" class="upload-btn" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload</button>
+                    </div>
+                    <div class="row my-upload-row">
+                        <h6 class="row-title">My Uploads</h6>
+                            <div class="col-xxl-3 col-lg-4 col-md-6 card-col">
+                                <div class="my-upload-card">
+                                    <div class="top-content">
+                                        <button class="star-btn"><ion-icon name="star-outline" class="icon"></ion-icon></button>
+                                        <button type="button" class="dot-dropdown"><ion-icon name="ellipsis-horizontal" class="icon"></ion-icon></button>
+                                    </div>
+                                    <div class="file-info-div">
+                                        <img src="assests/images/upload-card-svg.svg" alt="Upload" class="ig-fluid upload-card">
+                                        <h5 class="file-name">My journal.pdf</h5>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <div class="file-info">
+                                            <h5 class="fs-esmall">File size:</h5>
+                                            <h5 class="fs-medium">2.4MB</h5>
+                                        </div>
+                                        <div class="acces-users-div">
+                                            <div class="members-imgdiv">
+                                                <img src="assests/images/user5.jpeg" alt="Users" class="img-fluid user-img">
+                                                <img src="assests/images/user4.jpeg" alt="Users" class="img-fluid user-img">
+                                                <img src="assests/images/user3.jpeg" alt="Users" class="img-fluid user-img">
+                                            </div>
+                                            <h5 class="fs-esmall">Users with access</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-lg-4 col-md-6 card-col">
+                                <div class="my-upload-card">
+                                    <div class="top-content">
+                                        <button class="star-btn"><ion-icon name="star-outline" class="icon"></ion-icon></button>
+                                        <button type="button" class="dot-dropdown"><ion-icon name="ellipsis-horizontal" class="icon"></ion-icon></button>
+                                    </div>
+                                    <div class="file-info-div">
+                                        <img src="assests/images/upload-card-svg.svg" alt="Upload" class="ig-fluid upload-card">
+                                        <h5 class="file-name">ebay work-handle. pdf</h5>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <div class="file-info">
+                                            <h5 class="fs-esmall">File size:</h5>
+                                            <h5 class="fs-medium">2.4MB</h5>
+                                        </div>
+                                        <div class="acces-users-div">
+                                            <div class="members-imgdiv">
+                                                <img src="assests/images/user5.jpeg" alt="Users" class="img-fluid user-img">
+                                                <img src="assests/images/user4.jpeg" alt="Users" class="img-fluid user-img">
+                                                <img src="assests/images/user3.jpeg" alt="Users" class="img-fluid user-img">
+                                            </div>
+                                            <h5 class="fs-esmall">Users with access</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-lg-4 col-md-6 card-col">
+                                <div class="my-upload-card">
+                                    <div class="top-content">
+                                        <button class="star-btn"><ion-icon name="star-outline" class="icon"></ion-icon></button>
+                                        <button type="button" class="dot-dropdown"><ion-icon name="ellipsis-horizontal" class="icon"></ion-icon></button>
+                                    </div>
+                                    <div class="file-info-div">
+                                        <img src="assests/images/upload-card-svg.svg" alt="Upload" class="ig-fluid upload-card">
+                                        <h5 class="file-name">ebay work-handle. pdf</h5>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <div class="file-info">
+                                            <h5 class="fs-esmall">File size:</h5>
+                                            <h5 class="fs-medium">2.4MB</h5>
+                                        </div>
+                                        <div class="acces-users-div">
+                                            <div class="members-imgdiv">
+                                                <img src="assests/images/user5.jpeg" alt="Users" class="img-fluid user-img">
+                                                <img src="assests/images/user4.jpeg" alt="Users" class="img-fluid user-img">
+                                                <img src="assests/images/user3.jpeg" alt="Users" class="img-fluid user-img">
+                                            </div>
+                                            <h5 class="fs-esmall">Users with access</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row media-library-row">
+                        <h4 class="row-title">Media Library</h4>
+                        <div class="library-card-row">
+                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#uploadFileModal" class="media-library-card">
+                                <div class="inner-content">
+                                    <img src="assests/images/pdf-file.svg" alt="PDF" class="img-fluid icons">
+                                    <h5 class="title">PDF Files</h5>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="media-library-card">
+                                <div class="inner-content">
+                                    <img src="assests/images/audio.svg" alt="Audio" class="img-fluid icons">
+                                    <h5 class="title">Audio</h5>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="media-library-card">
+                                <div class="inner-content">
+                                    <img src="assests/images/video.svg" alt="Video" class="img-fluid icons">
+                                    <h5 class="title">Video</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <footer class="footer">
+                    <div class="inner-content">
+                        <a href="javascript:void(0)" class="footer-link">Members</a>
+                        <a href="javascript:void(0)" class="footer-link">Templates</a>
+                        <a href="javascript:void(0)" class="footer-link">Blog</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade modal-dark" id="uploadModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="title-div">
+                    <h5 class="title">UPLOAD FILE</h5>
+                    <h6 class="sub-title">upload audio/video files and have the AI engine transcribe</h6>
+                </div>
+                <div class="upload-file-div">
+                    <div class="drag-upload-card">
+                        <h6 class="text">Drag Files to upload <br> or</h6>
+                        <div class="upload"><label class="custom-upload"><input type="file" name="upload_file_3" />Browse</label></div>
+                    </div>
+                    <div class="upload-progress-div">
+                        <div class="top-cont">
+                            <h6 class="sec-title">Upload progress</h6>
+                            <button type="button" class="dot-dropdown"><ion-icon name="ellipsis-horizontal" class="icon"></ion-icon></button>
+                        </div>
+                        <div class="uploading-list">
+                            <div class="uploading-div">
+                                <h6 class="file-name">IMG-349823.jpg</h6>
+                                <div class="progress-bar"><span style="width: 100%;"></span></div>
+                                <h6 class="time">Complete</h6>
+                            </div>
+                            <div class="uploading-div">
+                                <h6 class="file-name">My journal.pdf</h6>
+                                <div class="progress-bar"><span style="width: 30%;"></span></div>
+                                <h6 class="time">2 minutes left</h6>
+                            </div>
+                            <div class="uploading-div">
+                                <h6 class="file-name">ebay work-handle. pdf</h6>
+                                <div class="progress-bar"><span style="width: 60%;"></span></div>
+                                <h6 class="time">5 minutes left</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade modal-dark" id="uploadFileModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="title-div">
+                    <h5 class="title">UPLOAD FILE</h5>
+                    <h6 class="sub-title">upload audio/video files and have the AI engine transcribe</h6>
+                </div>
+                <div class="video-thumb-card">
+                    <div class="text-content">
+                        <h6 class="text">File selected was a Video file: Would you like to transcribe with AI engine now</h6>
+                        <h6 class="text file-name">PXL-349823.mp4</h6>
+                    </div>
+                    <div class="video-thumb-div">
+                        <div class="prev-card">
+                            <h5 class="inner-text">VIDEO THUMBNAIL</h5>
+                        </div>
+                        <a href="javascript:void(0)" class="linear-btn">Transcribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
