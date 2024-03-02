@@ -144,13 +144,13 @@
                                     <h5 class="label">What would you like to publish</h5>
                                     <div class="cards-div row">
                                         <div class="col-sm-4">
-                                            <a href="javascript:void(0)" class="inner-card">
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#publishNewModal" class="inner-card">
                                                 <img src="assests/images/flipbooks.png" alt="FlipBooks" class="img-fluid card-img">
                                                 <h5 class="card-title">Flip Book</h5>
                                             </a>
                                         </div>
                                         <div class="col-sm-4">
-                                            <a href="javascript:void(0)" class="inner-card">
+                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#publishTabModal" class="inner-card">
                                                 <img src="assests/images/3d.png" alt="3D/AR/VR" class="img-fluid card-img">
                                                 <h5 class="card-title">3D/AR/VR</h5>
                                             </a>
@@ -279,6 +279,100 @@
             </div>
         </div>
     </main>
+
+    <!-- Modal -->  
+    <div class="modal fade modal-dark" id="publishNewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="title-div">
+                        <h5 class="title">Publish new </h5>
+                    </div>
+                    <div class="option-cards">
+                        <a href="javascript:void(0)" class="card-div">
+                            <img src="assests/images/plus-icon.png" alt="Publish from scratch" class="icon img-fluid">
+                            <h5 class="name">Publish from scratch</h5>
+                        </a>
+                        <a href="javascript:void(0)" class="card-div">
+                            <img src="assests/images/ai.png" alt="Publish with AI Engine" class="icon img-fluid">
+                            <h5 class="name">Publish with AI Engine</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal -->  
+        <div class="modal fade modal-dark publish-tab-modal" id="publishTabModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="tab-section">
+                            <div class="tabs-div">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <img src="assests/images/border-line.svg" alt="Border" class="border-dashed"></img>
+                                    <li role="presentation" class="">
+                                        <a href="#step1" class="nav-tab active" data-bs-toggle="tab" aria-controls="step1" role="tab"><span class="count"><span class="number">1</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">YOUR PDF</span></a>
+                                    </li>
+                                    <li role="presentation" class="">
+                                        <a href="#step2" class="nav-tab" data-bs-toggle="tab" aria-controls="step2" role="tab"><span class="count"><span class="number">2</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">Campaign Type   </span></a>
+                                    </li>
+                                    <li role="presentation" class="">
+                                        <a href="#step3" class="nav-tab" data-bs-toggle="tab" aria-controls="step3" role="tab"><span class="count"><span class="number">3</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">Gate Styling</span></a>
+                                    </li>
+                                    <li role="presentation" class="">
+                                        <a href="#step4" class="nav-tab" data-bs-toggle="tab" aria-controls="step4" role="tab"><span class="count"><span class="number">4</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">Page settings</span></a>
+                                    </li>
+                                    <li role="presentation" class="">
+                                        <a href="#step5" class="nav-tab" data-bs-toggle="tab" aria-controls="step5" role="tab"><span class="count"><span class="number">5</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">Annotations</span></a>
+                                    </li>
+                                    <li role="presentation" class="">
+                                        <a href="#step6" class="nav-tab" data-bs-toggle="tab" aria-controls="step6" role="tab"><span class="count"><span class="number">6</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">Videos</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane active" role="tabpanel" id="step1">
+                                    <div class="your-pdf-content two-col">
+                                        <div class="form-row">
+                                            <div class="form-groups">
+                                                <label class="label">Campaign Name/Reference:</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="campaign_name_reference" class="light-input">
+                                                </div>
+                                            </div>
+                                            <div class="form-groups">
+                                                <label class="label">Product name:</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="product_name" class="light-input">
+                                                </div>
+                                            </div>
+                                            <div class="form-groups">
+                                                <label class="label">Campaign Category:</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="campaign_category" class="light-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-groups">
+                                                <label class="label">File</label>
+                                                <div class="upload-card">
+                                                    <h6 class="text">Drag and drop file here</h6>
+                                                    <div class="upload"><label class="custom-upload"><input type="file" name="upload_file" /><img src="assests/images/drive.svg" alt="Upload"> Upload</label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="step2">Step2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
