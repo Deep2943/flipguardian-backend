@@ -312,22 +312,22 @@
                             <div class="tabs-div">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <img src="assests/images/border-line.svg" alt="Border" class="border-dashed"></img>
-                                    <li role="presentation" class="">
+                                    <li role="presentation">
                                         <a href="#step1" class="nav-tab active" data-bs-toggle="tab" aria-controls="step1" role="tab"><span class="count"><span class="number">1</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">YOUR PDF</span></a>
                                     </li>
-                                    <li role="presentation" class="">
-                                        <a href="#step2" class="nav-tab" data-bs-toggle="tab" aria-controls="step2" role="tab"><span class="count"><span class="number">2</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">Campaign Type   </span></a>
+                                    <li role="presentation">
+                                        <a href="#step2" class="nav-tab completed" data-bs-toggle="tab" aria-controls="step2" role="tab"><span class="count"><span class="number">2</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">Campaign Type   </span></a>
                                     </li>
-                                    <li role="presentation" class="">
+                                    <li role="presentation">
                                         <a href="#step3" class="nav-tab" data-bs-toggle="tab" aria-controls="step3" role="tab"><span class="count"><span class="number">3</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">Gate Styling</span></a>
                                     </li>
-                                    <li role="presentation" class="">
+                                    <li role="presentation">
                                         <a href="#step4" class="nav-tab" data-bs-toggle="tab" aria-controls="step4" role="tab"><span class="count"><span class="number">4</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">Page settings</span></a>
                                     </li>
-                                    <li role="presentation" class="">
+                                    <li role="presentation">
                                         <a href="#step5" class="nav-tab" data-bs-toggle="tab" aria-controls="step5" role="tab"><span class="count"><span class="number">5</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">Annotations</span></a>
                                     </li>
-                                    <li role="presentation" class="">
+                                    <li role="presentation">
                                         <a href="#step6" class="nav-tab" data-bs-toggle="tab" aria-controls="step6" role="tab"><span class="count"><span class="number">6</span> <ion-icon name="checkmark-outline" class="check-icon"></ion-icon></span> <span class="tab-name">Videos</span></a>
                                     </li>
                                 </ul>
@@ -556,7 +556,7 @@
                                 </div>
                                 <div class="tab-pane page-settings-tab" role="tabpanel" id="step5">
                                     <h5 class="sec-title">Add annotations</h5>
-                                    <div class="two-col">
+                                    <div class="two-col mb-70">
                                         <div class="form-row">
                                             <div class="form-groups">
                                                 <label class="label">Avatar name</label>
@@ -599,18 +599,29 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6">
-                                                    <div class="form-groups">
-                                                        <label class="label">Custom code:</label>
-                                                        <div class="input-group">
-                                                            <input type="text" name="background_color" class="light-input bg-input-lightgray" placeholder="Add Code">
-                                                            <span class="color-card"><ion-icon name="code-outline" class="icon"></ion-icon></span>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="two-col">
+                                        <div class="form-row">
+                                            <div class="form-groups">
+                                                <label class="label">Link Text</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="link_text" class="light-input fs-medium" placeholder="Link Text">
                                                 </div>
+                                            </div>
+                                            <div class="form-groups">
+                                                <label class="label">Link URL</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="link_url" class="light-input fs-medium" placeholder="https://example.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="row col-rows">
                                                 <div class="col-lg-6">
                                                     <div class="form-groups">
-                                                        <label class="label">Branding</label>
+                                                        <label class="label">Pages #:</label>
                                                         <select name="player_skin" class="bg-select">
                                                             <option value="FlipGuardian">FlipGuardian</option>
                                                             <option value="Lorem">Lorem</option>
@@ -619,11 +630,28 @@
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="form-groups">
-                                                        <label class="label">Page background image:</label>
-                                                        <select name="player_skin" class="bg-select">
-                                                            <option value="None">None</option>
-                                                            <option value="Lorem">Lorem</option>
+                                                        <label class="label">Position</label>
+                                                        <select name="position" class="bg-select">
+                                                            <option value="Top left">Top left</option>
+                                                            <option value="Top Right">Top Right</option>
                                                         </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Show</label>
+                                                        <select name="player_skin" class="bg-select">
+                                                            <option value="Before gate">Before gate</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Add annotation</label>
+                                                        <div class="input-group add-append">
+                                                            <input type="text" name="add_annotation" class="light-input bg-input-lightgray" placeholder="Add">
+                                                            <button class="add-append-btn"><ion-icon name="add-outline" class="icon"></ion-icon></span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -632,6 +660,41 @@
                                     <div class="bottom-btn-group">
                                         <button type="button" class="prev-btn">Prev</button>
                                         <button type="button" class="next-btn">Next</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane videos-tab" role="tabpanel" id="step6">
+                                    <h5 class="sec-title">NOTE: Start & End time only applies to YouTube. Leave at zero if you don't wish to use.</h5>
+                                    <div class="two-col">
+                                        <div class="form-row">
+                                            <div class="row col-rows">
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Pages #:</label>
+                                                        <select name="pages" class="bg-select">
+                                                            <option value="FlipGuardian">FlipGuardian</option>
+                                                            <option value="Lorem">Lorem</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6"></div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Show</label>
+                                                        <select name="show" class="bg-select">
+                                                            <option value="Before gate">Before gate</option>
+                                                            <option value="After gate">After gate</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-div">
+                                        <button type="button" class="add-btn"><ion-icon name="add-outline" class="icon"></ion-icon></button>
+                                    </div>
+                                    <div class="bottom-btn-group">
+                                        <button type="button" class="prev-btn">Prev</button>
+                                        <button type="button" class="next-btn">Publish</button>
                                     </div>
                                 </div>
                             </div>

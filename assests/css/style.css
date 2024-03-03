@@ -305,9 +305,9 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .input-row{gap: 15px 0;}
 .input-field-card{background: #04001C;position: relative;z-index: 2;overflow: hidden;border-radius: 20px;padding: 50px 35px;height: 100%;}
 .form-row{display: flex;flex-direction: column;gap: 30px 0;}
-.form-row .label{font-size: 16px;font-weight: 500;line-height: 20px;color: #FFFFFF94;margin-bottom: 2px;display: block;}
+.form-row .label{font-size: 16px;font-weight: 500;line-height: 20px;color: #FFFFFF94;margin-bottom: 4px;display: block;}
 .form-row .form-groups .input-group{display: flex;gap: 0 15px;width: 100%;flex-wrap: nowrap;position: relative;}
-.form-row .form-groups .input-group .light-input{width: 100%;border: 2px solid #FFFFFF;border-radius: 8px !important;padding: 13px 18px;font-size: 12px;font-weight: 300;line-height: 15px;color: #fff;background: transparent;}
+.form-row .form-groups .input-group .light-input{width: 100%;border: 2px solid #FFFFFF;border-radius: 8px !important;padding: 13px 18px;font-size: 12px;font-weight: 200;line-height: 15px;color: #fff;background: transparent;}
 .form-row .form-groups .input-group .light-input::placeholder{color: #fff;}
 .form-row .form-groups .save-btn{border-radius: 7px !important;background-color: var(--primary-color);padding: 10px 35px;border: 0;font-size: 14px;font-weight: 500;line-height: 20px;color: #fff;}
 .input-field-card .message{font-size: 15px;font-weight: 500;line-height: 21px;color: #FFFFFFB2;margin-bottom: 0;}
@@ -383,7 +383,10 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .tab-section .tabs-div .nav-tab .tab-name{font-size: 20px;font-weight: 500;line-height: 25px;text-align: center;color: #FFFFFFBF;opacity: 0;transition: all 0.2s ease;}
 .tab-section .tabs-div .nav-tab.active .tab-name{opacity: 1;}
 .tab-section .tabs-div .check-icon{color: #001F2D;font-size: 42px;display: none;}
-
+.tab-section .tabs-div .nav-tab.completed .number{display: none;}
+.tab-section .tabs-div .nav-tab.completed .check-icon{display: block;}
+.tab-section .tabs-div .nav-tab.completed .tab-name{opacity: 0;}
+.tab-section .tabs-div .nav-tab.completed .count{width: 55px;height: 55px;background: #fff;}
 .tab-section .tab-content{margin-top: 35px;}
 .tab-section .tab-content .two-col{display: grid;grid-template-columns: repeat(2,1fr);gap: 0 140px;}
 .tab-section .tab-content .your-pdf-content .form-row .label{font-size: 20px;line-height: 25px;color: #fff;margin-bottom: 10px;}
@@ -421,7 +424,7 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .form-row .form-groups .input-group .light-input.bg-input-lightgray:focus{outline: 0;}
 .form-row .form-groups .input-group .color-card{width:25px;height:25px;border-radius:2px;min-width:25px;position:absolute;left:14px;top:50%;transform:translate(0, -50%);}
 .col-rows{display: flex;gap: 27px 0;}
-.form-groups .bg-select{border: 2px solid #FFFFFF80;background: #FFFFFF80;border-radius: 8px;font-size: 16px;font-weight: 300;line-height: 20px;width: 100%;height: 40px;color: #fff;padding: 10px 16px;}
+.form-groups .bg-select{border: 2px solid #FFFFFF80;background: #FFFFFF80;border-radius: 8px;font-size: 16px;font-weight: 300;line-height: 20px;width: 100%;height: auto;color: #fff;padding: 10px 16px;}
 .form-groups .bg-select option{color: #000;}
 .form-groups .bg-select:focus{outline: 0;}
 .form-groups .color-card .icon{width: 28px;height: 28px;color: #fff;}
@@ -430,9 +433,15 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .rounded-forms .form-row .form-groups .input-group .light-input{border-radius: 39px !important;width: 100%;}
 .rounded-forms .form-row .form-groups{width: 100%;}
 .page-settings-tab .bottom-btn-group{margin-top: 50px;}
-
+.mb-70{margin-bottom: 70px;}
 .input-upload .custom-upload{width:100%;background:#FFFFFF80;border:2px solid #FFFFFF80;border-radius:8px;font-size:16px;line-height:20px;font-weight:200;padding:10px 15px;gap:0 23px;}
 .input-upload .custom-upload .icon{width: 24px;height: 24px;}
+.form-row .form-groups .input-group.add-append .light-input.bg-input-lightgray{padding: 10px 50px 10px 20px;}
+.form-row .form-groups .input-group.add-append .add-append-btn{border: 0;background: transparent;padding: 0;margin: 0;position: absolute;top: 50%;transform: translate(0,-50%);right: 15px;display: flex;}
+.form-row .form-groups .input-group.add-append .add-append-btn .icon{width: 30px;height: 30px;color: #fff;}
+.add-div{width: 100%;display: flex;align-items: end;justify-content: flex-end;margin-top: 40px;}
+.add-div .add-btn{border: 0;margin: 0;padding: 0;background: transparent;display: flex;}
+.add-div .add-btn .icon{width: 20px;height: 20px;color: #fff;}
 
 @media (min-width:1400px) {
     .publish-tab-modal .modal-xl{max-width: 1450px;}    
@@ -486,6 +495,8 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
     .option-cards .card-div{padding: 30px 45px;gap: 25px 0;}
     .option-cards .card-div .icon{height: 80px;}
     .option-cards .card-div .name{font-size: 14px;line-height: 18px;}
+    
+    .mb-70{margin-bottom: 30px;}
 }
 @media (max-width:576px) {
     .profile-card .profile-info .img-div .profile-img{width: 80px;height: 80px;min-width: 80px;}
@@ -564,6 +575,7 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
     .form-groups .form-check-input{width: 20px;height: 20px;}
     .tab-pane .sec-title{line-height: 18px;font-size: 16px;}
     .col-rows{gap: 15px 0;}
+    .tab-section .tab-content .your-pdf-content .form-row .label{font-size: 16px;line-height: 18px;margin-bottom: 5px;}
 }
 @media (max-width:575px) {
     .wrapper{overflow: hidden;}
