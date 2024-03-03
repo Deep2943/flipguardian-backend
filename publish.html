@@ -366,7 +366,274 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane" role="tabpanel" id="step2">Step2</div>
+                                <div class="tab-pane" role="tabpanel" id="step2">
+                                    <div class="campaign-cards">
+                                        <h6 class="campaign-label">Purpose of campaign</h6>
+                                        <div class="cards">
+                                            <a href="javascript:void(0)" class="inner-card">
+                                                <img src="assests/images/ungated.png" alt="Ungated access" class="img-fluid img-icon">
+                                                <h6 class="campaign-option">Ungated access</h6>
+                                            </a>
+                                            <a href="javascript:void(0)" class="inner-card active">
+                                                <img src="assests/images/password.png" alt="Password access" class="img-fluid img-icon">
+                                                <h6 class="campaign-option">Password access</h6>
+                                            </a>
+                                            <a href="javascript:void(0)" class="inner-card">
+                                                <img src="assests/images/collect.png" alt="Collect leads" class="img-fluid img-icon">
+                                                <h6 class="campaign-option">Collect leads</h6>
+                                            </a>
+                                            <a href="javascript:void(0)" class="inner-card">
+                                                <img src="assests/images/payment.png" alt="Collect payments" class="img-fluid img-icon">
+                                                <h6 class="campaign-option">Collect payments</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-btn-group">
+                                        <button type="button" class="prev-btn">Prev</button>
+                                        <button type="button" class="next-btn">Next</button>
+                                        <button type="button" class="next-btn" disabled>Next</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane gate-styling-tab" role="tabpanel" id="step3">
+                                    <h5 class="sec-title">Style Guardian gate</h5>
+                                    <div class="two-col">
+                                        <div class="form-row gap-12">
+                                            <div class="form-groups">
+                                                <label class="label">First name</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="first_name" class="light-input fs-medium">
+                                                </div>
+                                            </div>
+                                            <div class="form-groups">
+                                                <label class="label">Last name</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="last_name" class="light-input fs-medium">
+                                                </div>
+                                            </div>
+                                            <div class="form-groups">
+                                                <label class="label">email</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="email" class="light-input fs-medium">
+                                                </div>
+                                            </div>
+                                            <div class="form-row form-groups">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">I accept the terms of service & Privacy policy</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-groups">
+                                                <label class="label">Button color:</label>
+                                                <select name="color" class="trans-select">
+                                                    <option value="green">🟢 Green</option>
+                                                    <option value="blue">🔵 Blue</option>
+                                                    <option value="white">⚪ White</option>
+                                                    <option value="black">⚫ Black</option>
+                                                    <option value="purple">🟣 Purple</option>
+                                                    <option value="orange">🟠 Orange</option>
+                                                    <option value="red">🔴 Red</option>
+                                                    <option value="yellow">🟡 Yellow</option>
+                                                    <option value="brown">🟤 Brown</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-btn-group">
+                                        <button type="button" class="prev-btn">Prev</button>
+                                        <button type="button" class="next-btn">Next</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane page-settings-tab" role="tabpanel" id="step4">
+                                    <h5 class="sec-title">Style & Settings</h5>
+                                    <div class="two-col">
+                                        <div class="form-row left-inputs">
+                                            <div class="form-groups">
+                                                <label class="label">Paste your URL</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="url" class="light-input fs-medium" placeholder="https://example.com">
+                                                </div>
+                                            </div>
+                                            <div class="form-groups">
+                                                <label class="label">SEO Page Title</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="seo_page_title" class="light-input fs-medium" placeholder="Title">
+                                                </div>
+                                            </div>
+                                            <div class="form-groups">
+                                                <label class="label">SEO Description</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="seo_description" class="light-input fs-medium" placeholder="Description">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="row col-rows">
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Player Back color:</label>
+                                                        <div class="input-group">
+                                                            <input type="text" name="back_color" class="light-input bg-input-lightgray" value="#6ERKW4R">
+                                                            <span class="color-card" style="background: #2B4881;"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Page background colour:</label>
+                                                        <div class="input-group">
+                                                            <input type="text" name="background_color" class="light-input bg-input-lightgray" value="#6ERKW4R">
+                                                            <span class="color-card" style="background: #2B4881;"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Player Skin:</label>
+                                                        <select name="player_skin" class="bg-select">
+                                                            <option value="Dark theme">Dark theme</option>
+                                                            <option value="Light theme">Light theme</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Custom code:</label>
+                                                        <div class="input-group">
+                                                            <input type="text" name="background_color" class="light-input bg-input-lightgray" placeholder="Add Code">
+                                                            <span class="color-card"><ion-icon name="code-outline" class="icon"></ion-icon></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Branding</label>
+                                                        <select name="player_skin" class="bg-select">
+                                                            <option value="FlipGuardian">FlipGuardian</option>
+                                                            <option value="Lorem">Lorem</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Page background image:</label>
+                                                        <select name="player_skin" class="bg-select">
+                                                            <option value="None">None</option>
+                                                            <option value="Lorem">Lorem</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-forms">
+                                        <div class="form-row">
+                                            <div class="form-groups">
+                                                <label class="label">HEADLINE</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="headline" class="light-input fs-medium" placeholder="Description">
+                                                </div>
+                                            </div> 
+                                            <div class="form-groups">
+                                                <label class="label">Sub-Headline</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="sub_headline" class="light-input fs-medium" placeholder="Description">
+                                                </div>
+                                            </div>
+                                            <div class="form-groups">
+                                                <label class="label">Footer</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="footer" class="light-input fs-medium" placeholder="Description">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-btn-group">
+                                        <button type="button" class="prev-btn">Prev</button>
+                                        <button type="button" class="next-btn">Next</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane page-settings-tab" role="tabpanel" id="step5">
+                                    <h5 class="sec-title">Add annotations</h5>
+                                    <div class="two-col">
+                                        <div class="form-row">
+                                            <div class="form-groups">
+                                                <label class="label">Avatar name</label>
+                                                <div class="input-group">
+                                                    <input type="text" name="url" class="light-input fs-medium" placeholder="https://example.com">
+                                                </div>
+                                            </div>
+                                            <div class="form-groups">
+                                                <div class="upload input-upload">
+                                                    <label class="label">Avatar name</label>
+                                                    <label class="custom-upload"><input type="file" name="upload_file" /><ion-icon name="person" class="icon"></ion-icon> Choose image</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="row col-rows">
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Annotation background colour:</label>
+                                                        <div class="input-group">
+                                                            <input type="text" name="background_colour" class="light-input bg-input-lightgray" value="#6ERKW4R">
+                                                            <span class="color-card" style="background: #2B4881;"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Annotation text colour:</label>
+                                                        <div class="input-group">
+                                                            <input type="text" name="text_colour" class="light-input bg-input-lightgray" value="#6ERKW4R">
+                                                            <span class="color-card" style="background: #2B4881;"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="form-groups">
+                                                        <label class="label">Annotation text:</label>
+                                                        <div class="input-group">
+                                                            <input type="text" name="annotation_text" class="light-input fs-medium" placeholder="https://example.com">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Custom code:</label>
+                                                        <div class="input-group">
+                                                            <input type="text" name="background_color" class="light-input bg-input-lightgray" placeholder="Add Code">
+                                                            <span class="color-card"><ion-icon name="code-outline" class="icon"></ion-icon></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Branding</label>
+                                                        <select name="player_skin" class="bg-select">
+                                                            <option value="FlipGuardian">FlipGuardian</option>
+                                                            <option value="Lorem">Lorem</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-groups">
+                                                        <label class="label">Page background image:</label>
+                                                        <select name="player_skin" class="bg-select">
+                                                            <option value="None">None</option>
+                                                            <option value="Lorem">Lorem</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-btn-group">
+                                        <button type="button" class="prev-btn">Prev</button>
+                                        <button type="button" class="next-btn">Next</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
