@@ -443,6 +443,50 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .add-div .add-btn{border: 0;margin: 0;padding: 0;background: transparent;display: flex;}
 .add-div .add-btn .icon{width: 20px;height: 20px;color: #fff;}
 
+.members-row{gap: 15px 0;}
+.project-members-card{background: #00000080;border-radius: 12px;display: flex;flex-direction: column;gap: 10px 0;padding: 25px 25px 54px 25px;}
+.project-members-card.selected{border: 10px solid #00D1FF94}
+.project-members-card .top-content{justify-content: end;display: flex;align-items: center;gap: 0 20px;}
+.project-members-card .top-content button{padding: 0;margin: 0;border: 0;background: transparent;}
+.project-members-card .top-content .icon{color: #fff;width: 25px;height: 25px;}
+.project-members-card .inner-content{display: flex;gap: 0 18px;}
+.project-members-card .inner-content .project-members-img{width: 60px;height: 60px;border-radius: 50%;}
+.project-members-card .text-content{display: flex;flex-direction: column;gap: 23px 0;}
+.project-members-card .text-content .fs-esmall{font-weight: 400;color: #A0AEC0;}
+.project-members-card .text-content .fs-medium{font-weight: 500;color: #FFFFFFCC;}
+.project-members-card .members-info{display: flex;flex-direction: column;gap: 8px 0;}
+.project-members-card .members-info .img-div{display: flex;align-items: center;gap: 0 35px;}
+.project-members-card .members-info .members-imgdiv .user-img{width: 40px;height: 40px;margin-right: -15px;}
+.project-members-card .members-info .edit-member-btn{border: 1px solid #FFFFFF;border-radius: 7px;padding: 12px 23px;font-size: 14px;font-weight: 400;line-height: 20px;color: #fff;text-decoration: none;}
+.project-members-card .team-info{display: flex;flex-direction: column;gap: 4px 0;}
+
+.select-to-view-card{background: #00000080;border-radius: 12px;display: flex;align-items: center;justify-content: center;flex-direction: column;gap: 25px 0;height: 100%;padding: 50px 25px;}
+.select-to-view-card .fs-medium{color: #FFFFFFCC;font-weight: 500;}
+
+.selected-pro-card{display: flex;flex-direction: column;background: #00000080;border-radius: 12px;padding: 25px 60px 15px 60px;gap: 42px 0;}
+.selected-pro-card .img-content{display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 20px 0;}
+.selected-pro-card .img-content .project-members-img{width: 60px;height: 60px;border-radius: 50%;}
+.selected-pro-card .img-content .fs-medium{color: #FFFFFFCC;font-weight: 500;text-align: center;}
+.statics-div .table-th{color: #A0AEC0;font-weight: 400;border: 0;padding: 0 0 25px 0;}
+.statics-div .table-td{border: 0;padding: 0 10px 10px 0;}
+.statics-div .user-info{display: flex;gap: 0 12px;align-items: center;}
+.statics-div .user-info .user-img{width: 40px;height: 40px;border-radius: 50%;object-fit: cover;border: 2px solid #141448}
+.statics-div .user-info .fs-medium{color: #FFFFFFCC;font-size: 14px;line-height: 19px;font-weight: 500;}
+.statics-div .user-info .you{font-size: 12px;font-weight: 400;line-height: 12px;text-align: left;color: #00FF57;}
+.statics-div .progress-bar-div .perc{font-size: 14px;font-weight: 700;line-height: 20px;text-align: left;color: #FFFFFF;margin: 0;}
+.statics-div .outline-btn{border: 1px solid #FFFFFF;border-radius: 7px;padding: 7px 24px;font-size: 14px;font-weight: 400;line-height: 20px;color: #fff;text-decoration: none;max-width: 140px;display: block;text-align: center;white-space: nowrap;}
+.project-compli-div{width: 100%;display: flex;align-items: center;justify-content: center;}
+.project-compli-div .progress-bar-div{width: 400px;}
+.project-compli-div .progress-bar-div .perc{text-align: center;color: #fff;font-weight: 700;}
+.project-compli-div .progress-bar-div .bar{width: 100%;height: 5px;}
+.statics-div .bar, .project-compli-div .bar{background: #23244B;}
+.statics-div .bar .filled, .project-compli-div .bar .filled{background: #1A9BE3;}
+.project-compli-div .progress-bar-div .bar .filled{height: 5px;}
+.project-compli-div .fs-esmall{text-align: center;color: #A0AEC0;padding-top: 10px;}
+
+
+
+
 @media (min-width:1400px) {
     .publish-tab-modal .modal-xl{max-width: 1450px;}    
 }
@@ -497,6 +541,16 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
     .option-cards .card-div .name{font-size: 14px;line-height: 18px;}
     
     .mb-70{margin-bottom: 30px;}
+    .project-members-card .members-info .img-div{flex-direction: column;gap: 15px 0;align-items: start;}
+    .selected-pro-card{padding: 25px 30px 15px 30px;gap: 25px 0;}
+    .statics-div .table-th{padding: 0 0 15px 0;}
+    .statics-div .user-info .fs-medium{font-size: 12px;line-height: 14px;}
+    .statics-div .user-info{gap: 0 7px;}
+    .statics-div .outline-btn{font-size: 12px;line-height: 16px;padding: 7px 18px;}
+    .project-members-card .top-content .icon{width: 18px;height: 18px;}
+    .project-members-card .inner-content .project-members-img{width: 45px;height: 45px;}
+    .project-members-card .inner-content{gap: 0 10px;}
+    .project-members-card{padding: 25px;}
 }
 @media (max-width:576px) {
     .profile-card .profile-info .img-div .profile-img{width: 80px;height: 80px;min-width: 80px;}
