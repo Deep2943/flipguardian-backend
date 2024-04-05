@@ -388,11 +388,6 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="bottom-btn-group">
-                                        <button type="button" class="prev-btn">Prev</button>
-                                        <button type="button" class="next-btn">Next</button>
-                                        <button type="button" class="next-btn" disabled>Next</button>
-                                    </div>
                                 </div>
                                 <div class="tab-pane gate-styling-tab" role="tabpanel" id="step3">
                                     <h5 class="sec-title">Style Guardian gate</h5>
@@ -439,10 +434,6 @@
                                                 </select>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="bottom-btn-group">
-                                        <button type="button" class="prev-btn">Prev</button>
-                                        <button type="button" class="next-btn">Next</button>
                                     </div>
                                 </div>
                                 <div class="tab-pane page-settings-tab" role="tabpanel" id="step4">
@@ -549,10 +540,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="bottom-btn-group">
-                                        <button type="button" class="prev-btn">Prev</button>
-                                        <button type="button" class="next-btn">Next</button>
-                                    </div>
                                 </div>
                                 <div class="tab-pane page-settings-tab" role="tabpanel" id="step5">
                                     <h5 class="sec-title">Add annotations</h5>
@@ -657,10 +644,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="bottom-btn-group">
-                                        <button type="button" class="prev-btn">Prev</button>
-                                        <button type="button" class="next-btn">Next</button>
-                                    </div>
                                 </div>
                                 <div class="tab-pane videos-tab" role="tabpanel" id="step6">
                                     <h5 class="sec-title">NOTE: Start & End time only applies to YouTube. Leave at zero if you don't wish to use.</h5>
@@ -692,11 +675,12 @@
                                     <div class="add-div">
                                         <button type="button" class="add-btn"><ion-icon name="add-outline" class="icon"></ion-icon></button>
                                     </div>
-                                    <div class="bottom-btn-group">
-                                        <button type="button" class="prev-btn">Prev</button>
-                                        <button type="button" class="next-btn">Publish</button>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="bottom-btn-group">
+                                <button type="button" class="prev-btn">Prev</button>
+                                <button type="button" class="next-btn">Next</button>
+                                <button type="button" class="publish-btn">Publish</button>
                             </div>
                         </div>
                     </div>
@@ -709,6 +693,45 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabList = document.querySelector('.tabs-div ul');
+            const buttonGroup = document.querySelector('.bottom-btn-group');
+
+            const tabs = Array.from(tabList.children);
+
+            const prevButton = buttonGroup.querySelector('.prev-btn');
+            const nextButton = buttonGroup.querySelector('.next-btn');
+            const publishButton = buttonGroup.querySelector('.publish-btn');
+
+            let activeTabIndex = 1;
+
+            prevButton.disabled = true;
+            nextButton.disabled = false;
+            publishButton.disabled = true;
+
+            prevButton.addEventListener('click', () => {
+            tabs[activeTabIndex - 1].children[0].click();
+            });
+
+            nextButton.addEventListener('click', () => {
+            tabs[activeTabIndex + 1].children[0].click();
+            });
+
+            tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                prevButton.disabled = index === 0;
+                nextButton.disabled = index === tabs.length - 1;
+                publishButton.disabled = index !== tabs.length - 1;
+                activeTabIndex = index;
+            });
+            });
+        });
+
+
         const ctx = document.getElementById('analyticsChart');
         const ctx2 = document.getElementById('activeUsersChart');
 

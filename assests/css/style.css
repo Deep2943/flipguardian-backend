@@ -405,9 +405,12 @@ button.navbar-toggler .navbar-dash{transition:0.2s all;}
 .campaign-cards .inner-card.active{padding: 32px;background: #fff;}
 .campaign-cards .inner-card.active .campaign-option{color: #002955;}
 
-.bottom-btn-group{width: 100%;display: flex;align-items: center;justify-content: center;gap: 0 35px;margin-top: 140px;}
+.bottom-btn-group{width: 100%;display: flex;align-items: center;justify-content: center;gap: 0 35px;margin-top: 100px;}
 .bottom-btn-group .prev-btn{padding: 17px 69px;border: 4px solid #8C8C8C;background: #FFFFFF;border-radius: 8px;box-shadow: 0px 0px 4px 0px #00000040;font-size: 20px;font-weight: 500;line-height: 25px;color: #8C8C8C;}
-.bottom-btn-group .next-btn{padding: 17px 69px;border: 4px solid #fff;background: #0056B2;border-radius: 8px;box-shadow: 0px 0px 4px 0px #00000040;font-size: 20px;font-weight: 500;line-height: 25px;color: #fff;}
+.bottom-btn-group .prev-btn:disabled{cursor: auto;}
+.bottom-btn-group .next-btn, .bottom-btn-group .publish-btn{padding: 17px 69px;border: 4px solid #fff;background: #0056B2;border-radius: 8px;box-shadow: 0px 0px 4px 0px #00000040;font-size: 20px;font-weight: 500;line-height: 25px;color: #fff;}
+.bottom-btn-group .publish-btn:disabled{display: none;}
+.bottom-btn-group .next-btn:disabled{display: none;}
 .bottom-btn-group .next-btn:disabled{background: #8C8C8C;}
 
 .tab-pane .sec-title{font-size: 18px;font-weight: 400;line-height: 23px;color: #FFFFFFB2;margin-bottom: 20px;}
